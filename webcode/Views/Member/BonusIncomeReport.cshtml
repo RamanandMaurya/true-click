@@ -1,0 +1,67 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Bonus ROI Income Report</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    @*<div class="cm-tbl-header">
+                            <div class="cm-data-searchDate">
+                                <div class="date-filet">
+                                    <div id="reportrange" class="cm-date-picker">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="fa fa-caret-down"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Inc. Date</th>
+                                <th>Inv. Amount</th>
+                                <th>ROI Per.</th>
+                                <th>Income amt.</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                    <tr>
+                                        <th>@i</th>
+                                        <td><p>@dr["TransactionDate"].ToString()</p></td>
+                                        <td><p>$ @dr["Investment"].ToString()</p></td>
+                                        <td><p>@dr["RoiPercentage"].ToString() %</p></td>
+                                        <td><p>@dr["Income"].ToString()</p></td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+

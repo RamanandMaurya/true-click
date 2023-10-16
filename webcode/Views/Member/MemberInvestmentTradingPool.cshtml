@@ -1,0 +1,165 @@
+﻿@{
+  Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">Manage Trading Pool Investment</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="prasonal-dd shadow-custom">
+        @using (Html.BeginForm())
+        {
+          <div class="prasonal-form">
+            <div class="pre-title-ue">Manage Investment</div>
+            <div class="form-main">
+              <div class="login-intup col-ff5">
+                <span>Usdt Wallet Balance</span>
+                <input type="text" name="usdtBalance" id="usdtBalance" class="login-inp" value="@ViewData["_usdtbalance"]" readonly>
+              </div>
+              <div class="login-intup col-ff5">
+              </div>
+              <div class="login-intup col-ff5">
+                <div class="custom-select">
+                  <span>Payment Type</span>
+                  <select id="paymenttype" name="paymenttype">
+                    <option value="0">Choose Payment Type</option>
+                    <option value="2">100 % USDT</option>
+                  </select>
+                </div>
+              </div>
+              <div class="login-intup col-ff5">
+                <span>Investment Amount</span>
+                <input type="number" name="amount" id="amount" class="login-inp">
+              </div>
+              <div class="login-intup col-ff">
+                <span class="investmentTitle">Choose Plan</span>
+                <div class="selectInvestment">
+                  <div class="investmentItem"><input type="radio" checked id="Plan1" name="investmentType" value="6" /><label for="Plan1">USDT 100 - 10000 (4% ROI)</label></div>
+                  <div class="investmentItem"><input type="radio" id="Plan2" name="investmentType" value="7" /><label for="Plan2">USDT 10100 - 17500 (5% ROI)</label></div>
+                  <div class="investmentItem"><input type="radio" id="Plan3" name="investmentType" value="8" /><label for="Plan3">USDT 17600 Above (6% ROI)</label></div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="submit-btn-wrap">
+              @{
+                string err = "";
+                if (ViewData["_ErrorMessage"] != null)
+                {
+                  err = ViewData["_ErrorMessage"].ToString();
+                }
+              }
+              <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+              <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Save Investment</button>
+            </div>
+          </div>
+        }
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $('#btnSubmit').click(function () {
+
+            //$("#btnSubmit").attr("disabled", true);
+            $("#btnSubmit").hide();
+
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                $("#btnSubmit").show();
+                //$("#btnSubmit").removeAttr("disabled");
+                return false;
+            }
+
+            if (!confirm('Are you sure to invest in Trading Pool ?')) {
+                $("#btnSubmit").show();
+                return false;
+            }
+
+            return true;
+        });
+    });
+
+    function ValidateForm() {
+
+        var error = '';
+
+        if (!SelectMandatory("paymenttype")) {
+            error = 'Please choose payment type. !!';
+            return error;
+        }
+
+        if (!InputMandatory("amount")) {
+            error = 'Please enter investment amount. !!';
+            return error;
+        }
+
+        if (!InputAmountValidate("amount")) {
+            error = 'Please enter valid investment amount. !!';
+            return error;
+      }
+
+      var amt = $('#amount').val();
+      var plan = $("input[name='investmentType']:checked").val();
+
+      if (plan == '6') {
+        if (parseFloat(amt) < 100 || parseFloat(amt) > 10000) {
+          error = 'Please enter valid investment amount. Amount should be between 100 - 10000 !!';
+          return error;
+        }
+      }
+
+      if (plan == '7') {
+        if (parseFloat(amt) < 10100 || parseFloat(amt) > 17500) {
+          error = 'Please enter valid investment amount. Amount should be between 10100 - 17500 !!';
+          return error;
+        }
+      }
+
+      if (plan == '8') {
+        if (parseFloat(amt) < 17600) {
+          error = 'Please enter valid investment amount. Amount should be above 17600 !!';
+          return error;
+        }
+      }
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputAmountValidate(name) {
+        var val = $('#' + name + '').val();
+        if (parseFloat(val) <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+</script>

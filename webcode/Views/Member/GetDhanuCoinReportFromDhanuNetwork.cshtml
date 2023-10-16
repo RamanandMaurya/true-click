@@ -1,0 +1,71 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Dhanu Coin Report - Dhanu Network</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    @*<div class="cm-tbl-header">
+                            <div class="cm-data-searchDate">
+                                <div class="date-filet">
+                                    <div id="reportrange" class="cm-date-picker">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="fa fa-caret-down"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Trans Date</th>
+                                <th>Trans Type</th>
+                                <th>Trans Name</th>
+                                <th>Dhanu INR Rate</th>
+                                <th>Dhanu Credit</th>
+                                <th>Dhanu Debit</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td><p>@dr["TransactionDate"].ToString()</p></td>
+                                        <td><p>@dr["TransactionType"].ToString()</p></td>
+                                        <td><p>@dr["Transtype"].ToString()</p></td>
+                                        <td><p>@dr["DhanuInr"].ToString()</p></td>
+                                        <td><p>@dr["DhanuCredit"].ToString()</p></td>
+                                        <td><p>@dr["DhanuDebit"].ToString()</p></td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+

@@ -1,0 +1,223 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+    var details = ViewData["_details"] as DataTable;
+}
+
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">withdrawal</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="community-wrapper shadow-custom">
+                <div class="withdrawl">
+                    <div class="withdralw_inner">
+                        <div class="dhanuWithdrawl dhanulftSection">
+                            <div class="liveDhanuTitle">DHANU</div>
+                            <div class="coinDesign">
+                                <img src="/assets_backend/images/withdrawalDhanu.png" alt="dhanu images" />
+                            </div>
+                            <div class="liveRate">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Withdraw Eligible Coin</td>
+                                            <td>@details.Rows[0]["DhanuWithdrawBalanceCoin"].ToString()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Withdraw Eligible Amount($)</td>
+                                            <td>$ @details.Rows[0]["DhanuWithdrawBalanceUsd"].ToString()</td>
+                                        </tr>
+                                        @*<tr>
+                                                <td>Total Debit Coin</td>
+                                                <td>@details.Rows[0]["_dhanutotalDebitCoin"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Withdrawable Coin</td>
+                                                <td>@details.Rows[0]["_dhanuBalanceCoin"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Coin Rate</td>
+                                                <td>@details.Rows[0]["_dhanurate"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Withdrawable Amount</td>
+                                                <td>$ @details.Rows[0]["_dhanuBalanceUsd"].ToString()</td>
+                                            </tr>*@
+                                        <tr>
+                                            <td colspan="2" style="text-align: center">
+                                                <a class="custom-button-tbl" href="~/Member/OtpAuthentication/2">Click here to submit withdrawal request</a>
+                                            </td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="dhanuWithdrawl USDTRightSection">
+                            <div class="liveDhanuTitle">USDT</div>
+                            <div class="coinDesign">
+                                <img src="/assets_backend/images/withdrawalUSDT.png" alt="USDT images" />
+                            </div>
+                            <div class="liveRate">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Withdraw Eligible Coin</td>
+                                            <td>@details.Rows[0]["UsdtWithdrawBalanceCoin"].ToString()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Withdraw Eligible Amount($)</td>
+                                            <td>$ @details.Rows[0]["UsdtWithdrawBalanceUsd"].ToString()</td>
+                                        </tr>
+                                        @*<tr>
+                                                <td>Total Debit Coin</td>
+                                                <td>@details.Rows[0]["_usdttotalDebitCoin"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Withdrawable Coin</td>
+                                                <td>@details.Rows[0]["_usdtBalanceCoin"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Coin Rate</td>
+                                                <td>@details.Rows[0]["_usdtrate"].ToString()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Withdrawable Amount</td>
+                                                <td>$ @details.Rows[0]["_usdtBalanceUsd"].ToString()</td>
+                                            </tr>*@
+                                    <tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="withdralwDhanu">
+                            <div class="withdralwDhanuInner">
+                                <div class="withdralwTB active" data-coin="dahnu-data">DHANU</div>
+                                <div class="withdralwTB" data-coin="usdt-data">USDT</div>
+                            </div>
+                            <div class="withdralwDhanuContent">
+                                <div class="withdralwTBItem active" id="dahnu-data">
+                                    <div class="withdralwTBItemMain">
+                                        <span>Eligible Amount</span>
+                                        <input type="text" class="enterAmount" placeholder="Enter Amount">
+                                        <div class="enterAmountAddWrp">
+                                            <input type="submit" class="enterAmountAdd" name="" value="Add Request" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="withdralwTBItem" id="usdt-data">
+                                    <div class="withdralwTBItemMain">
+                                        <span>Eligible Amount</span>
+                                        <input type="text" class="enterAmount" placeholder="Enter Amount">
+                                        <div class="enterAmountAddWrp">
+                                            <input type="submit" class="enterAmountAdd" name="" value="Add Request" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="community-wrapper shadow-custom">
+                <div class="widthdrawlTblWrp">
+                    <div class="widthdrawlTblWrpIn">
+                        <div class="wthdrebtn current" data-elgible="elgible">DHANU</div>
+                        <div class="wthdrebtn" data-elgible="elgible1">USDT</div>
+                    </div>
+                </div>
+                <div class="withdrawlTbl">
+                    <div class="cm-table-data tableTabStyle current" id="elgible">
+                        <div class="cm-table-data-in">
+                            <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Tr. Date</th>
+                                        <th>Tr. Name</th>
+                                        <th>Credit Coin</th>
+                                        <th>Used Coin</th>
+                                        <th>Bal. Coin</th>
+                                        <th>Used Status</th>
+                                        <th>Withdraw Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var i = 0;
+                                        foreach (DataRow dr in (ViewData["_dhanureport"] as DataTable).Rows)
+                                        {
+                                            i++;
+
+                                        <tr>
+                                            <td>@i</td>
+                                            <td><p>@dr["TrDate"].ToString()</p></td>
+                                            <td><p>@dr["TrName"].ToString()</p></td>
+                                            <td><p>@dr["Coin"].ToString()</p></td>
+                                            <td><p>@dr["UsedCoin"].ToString()</p></td>
+                                            <td><p>@dr["BalanceCoin"].ToString()</p></td>
+                                            <td><p>@dr["BalanceStatus"].ToString()</p></td>
+                                            <td><p>@dr["EligibleStatus"].ToString()</p></td>
+                                        </tr>
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="cm-table-data tableTabStyle" id="elgible1">
+                        <div class="cm-table-data-in">
+                            <table id="cmDataTable2" class="display table" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Tr. Date</th>
+                                        <th>Tr. Name</th>
+                                        <th>Credit Coin</th>
+                                        <th>Used Coin</th>
+                                        <th>Bal. Coin</th>
+                                        <th>Used Status</th>
+                                        <th>Withdraw Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var j = 0;
+                                        foreach (DataRow dr in (ViewData["_usdtreport"] as DataTable).Rows)
+                                        {
+                                            j++;
+
+                                        <tr>
+                                            <td>@j</td>
+                                            <td><p>@dr["TrDate"].ToString()</p></td>
+                                            <td><p>@dr["TrName"].ToString()</p></td>
+                                            <td><p>@dr["Coin"].ToString()</p></td>
+                                            <td><p>@dr["UsedCoin"].ToString()</p></td>
+                                            <td><p>@dr["BalanceCoin"].ToString()</p></td>
+                                            <td><p>@dr["BalanceStatus"].ToString()</p></td>
+                                            <td><p>@dr["EligibleStatus"].ToString()</p></td>
+                                        </tr>
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

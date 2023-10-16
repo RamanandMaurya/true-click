@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">OTP Authentication</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Authenticate OTP</div>
+                        <div class="form-main">
+                            <div class="login-intup col-ff5">
+                                * Please verify your OTP sent on your registered email address with us.!!
+                            </div>
+                            <div class="login-intup col-ff5">
+                                &nbsp;
+                            </div>
+                            <div class="login-intup col-ff5">
+                                <span>Enter OTP Code</span>
+                                <input type="text" name="otp" id="otp" class="login-inp">
+                            </div>
+                            <div class="login-intup col-ff5">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="submit-btn-wrap">
+                            @{
+                                string err = "";
+                                string suc = "";
+                                if (ViewData["_ErrorMessage"] != null)
+                                {
+                                    err = ViewData["_ErrorMessage"].ToString();
+                                }
+
+                                if (ViewData["_SuccessMessage"] != null)
+                                {
+                                    suc = ViewData["_SuccessMessage"].ToString();
+                                }
+                            }
+                            <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsuc" style="color:#eae73f">@suc</label><br />
+                            <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Verify OTP</button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

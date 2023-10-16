@@ -1,0 +1,415 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Asset Analysis People Network" />
+    <title>BAAP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/favicon.png">
+    <link href="~/assets/css/icons.css" rel="stylesheet">
+    <link href="~/assets/css/custom.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W57DJ4N');</script>
+    <!-- End Google Tag Manager -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QBCL0NZPB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8QBCL0NZPB');
+    </script>
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W57DJ4N"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="body-wrapper">
+        <section class="section-spacing login-page">
+            <div class="cm-container">
+                <div class="cm-bg-images">
+                    <div class="login-wrapper">
+                        <div class="login-wrapper-in">
+
+                            <div class="login-form-area register-page">
+                                <div class="login-form">
+                                    @using (Html.BeginForm())
+                                    {
+                                        <div class="form-main">
+                                            <div class="login-form-title">Sign up</div>
+                                            <div class="login-intup col2">
+                                                <span><i class="fa fa-user"></i>First Name</span>
+                                                <input type="text" name="fname" id="fname" class="login-inp">
+                                            </div>
+                                            <div class="login-intup col2">
+                                                <span><i class="fa fa-user"></i>Last Name</span>
+                                                <input type="text" name="lname" id="lname" class="login-inp">
+                                            </div>
+                                            <div class="login-intup col2">
+                                                <span><i class="fa fa-envelope"></i>E-mail</span>
+                                                <input type="text" name="email" id="email" class="login-inp" required pattern="[^@@]+@@[^@@]+\.[a-zA-Z]{2,6}">
+                                            </div>
+                                            <div class="login-intup col2">
+                                                <span><i class="fa fa-phone"></i>Mobile no</span>
+                                                <input type="text" name="mobile" id="mobile" class="login-inp">
+                                            </div>
+                                            @*<div class="login-intup registerlogin">
+                                                    <span><i class="fa fa-user"></i>Country</span>
+
+                                                    <select id="country" name="country" class="login-inp">
+                                                        <option value="0">--Select--</option>
+                                                        @foreach (DataRow dr in (ViewData["_country"] as DataTable).Rows)
+                                                        {
+                                                            <option value="@dr["cid"].ToString()">@dr["Countryname"].ToString()</option>
+                                                        }
+                                                    </select>
+                                                </div>*@
+                                            @*<div class="login-intup">
+                                                    <div class="custom-select">
+                                                        <span>Country</span>
+                                                        <select id="country" name="country">
+                                                            <option value="0">--Select--</option>
+                                                            @foreach (DataRow dr in (ViewData["_country"] as DataTable).Rows)
+                                                            {
+                                                                <option value="@dr["cid"].ToString()">@dr["Countryname"].ToString()</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>*@
+                                            <div class="login-intup">
+                                                <span><i class="fa fa-user"></i>Referal ID</span>
+                                                <input type="text" name="referralcode" id="referralcode" class="login-inp">
+                                            </div>
+                                            <div class="login-intup">
+                                                <span><i class="fa fa-user"></i>Referal Name</span>
+                                                <input type="text" name="referralname" id="referralname" class="login-inp" readonly>
+                                                <input type="hidden" id="referralregno" name="referralregno" value="0" />
+                                            </div>
+                                            <div class="login-btn-login">
+                                                @{
+                                                    string err = "";
+                                                    if (ViewData["_ErrorMessage"] != null)
+                                                    {
+                                                        err = ViewData["_ErrorMessage"].ToString();
+                                                    }
+                                                }
+                                                <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                                                <button type="submit" id="btnSubmit" class="btn-login">Signup</button>
+                                            </div>
+                                            <input type="hidden" id="HF_referralcode" value="@ViewData["_referralcode"]" />
+                                        </div>
+                                        <div class="other-login">Already a member? <a href="~/login">Sign in</a></div>
+                                    }
+                                </div>
+                            </div>
+
+
+                            <div class="login-logo-area register-page">
+                                <div class="login-logo-inner">
+                                    <div class="login-logo">
+                                        <a href="~/">
+                                            <img src="~/assets/images/logo.svg" alt="logo">
+                                        </a>
+                                    </div>
+                                    <div class="logo-bottom-content">
+                                        <p><span>Engaging more, Refreshing result</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customPopupWrapper popupOuterBody">
+                <div class="customPopup">
+                    <div class="customPopupInner">
+                        <div class="popupBody">
+                            @*<div class="popupClose CmpopupClose"></div>*@
+                            <div id="divEmail" class="hideverify">
+                                <div class="OTPTitle">
+                                    <h5>Verify Your Email Address</h5>
+                                </div>
+                                <div class="sendOTPInp">
+                                    <label class="hintNumber"><span>abc@gmail.com</span></label>
+                                    <!--  <input type="email" class="sendOTPInpFocus" placeholder="Enter Email Id"> -->
+                                    <div class="sendOTPBtnWrap">
+                                        <input type="submit" name="sendOTPBtn" id="btnSendOtpEmail" value="Resend OTP" />
+                                        <label class="otpSend" id="emailsendmsg"></label>
+                                    </div>
+                                </div>
+                                <div class="verifyOTPWrap">
+                                    <div class="verifyOTPWrapTitle">
+                                        Please enter the 5-digit verification code we sent via EMAIL:
+                                    </div>
+                                    <div class="optInpContain">
+                                        <input class="otpInput" id="txtEOtp1" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1>
+                                        <input class="otpInput" id="txtEOtp2" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1>
+                                        <input class="otpInput" id="txtEOtp3" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1>
+                                        <input class="otpInput" id="txtEOtp4" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1>
+                                        <input class="otpInput" id="txtEOtp5" type="text" oninput='digitValidate(this)' onkeyup='tabChange(5)' maxlength=1>
+                                    </div>
+                                    <button class='optInpVerifyAll' id="btnVerifyOtpEmail">Verify</button>
+                                </div>
+                            </div>
+                            <div id="divEmailSuccess" class="successFullly successEvent" style="display:none;">
+                                <div class="successFulllyMain">
+                                    <img src="~/assets_backend/images/successImg.jpg" alt="successFullly">
+                                    <div class="successContent">
+                                        <h4>Successfully</h4>
+                                        <p>Your email id has been verified. !!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divEmailFail" class="successFullly failedEvent" style="display:none;">
+                                <div class="successFulllyMain">
+                                    <img src="~/assets_backend/images/oppsImg.jpg" alt="oppsImg">
+                                    <div class="successContent">
+                                        <h4>Something went wrong</h4>
+                                        @*<p>verification code we sent</p>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="~/assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+        //$('.customPopupOpen').click(function () {
+        //    $('body').toggleClass('popup-active');
+        //    $('.popupOuterBody').toggleClass('popupActive');
+        //    setTimeout(function () {
+        //        $('.sendOTPInpFocus').focus();
+        //    }, 500);
+
+        //    SendOtpEmail();
+        //});
+
+        $('#btnSendOtpEmail').click(function () {
+            SendOtpEmail();
+            return false;
+        });
+
+        $('#btnVerifyOtpEmail').click(function () {
+            VerifyOtpEmail();
+            return false;
+
+        });
+        var referralcode = $('#HF_referralcode').val();
+
+        if (referralcode != null && referralcode != '') {
+            $('#referralcode').val(referralcode);
+            $("#referralcode").prop("readonly", true);
+            GetReferralInfo();
+            return false;
+        }
+
+        $('#referralcode').on('change', function () {
+
+            GetReferralInfo();
+            return false;
+        });
+
+        $('#btnSubmit').click(function () {
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                return false;
+            }
+            return true;
+        });
+    });
+
+    function SendOtpEmail() {
+
+        var email = $('#fname').val();
+        var name = $('#email').val();
+
+         $.ajax({
+            url: '@Url.Action("SendOtpEmail", "Member")',
+            type: 'GET',
+             data: { email: email, },
+            dataType: 'json',
+             success: function (data) {
+
+                 alert(data);
+                 $('#emailsendmsg').text('OTP Resend Successfully. Please check. !!');
+                 return false;
+            }
+        });
+    }
+
+    function VerifyOtpEmail() {
+
+        var txtEOtp1 = $('#txtEOtp1').val();
+        var txtEOtp2 = $('#txtEOtp2').val();
+        var txtEOtp3 = $('#txtEOtp3').val();
+        var txtEOtp4 = $('#txtEOtp4').val();
+        var txtEOtp5 = $('#txtEOtp5').val();
+
+
+        var otpcode = txtEOtp1 + '' + txtEOtp2 + '' + txtEOtp3 + '' + txtEOtp4 + '' + txtEOtp5;
+
+        $.ajax({
+            url: '@Url.Action("VerifyOtpEmail", "Member")',
+            type: 'GET',
+            data: { otpcode: otpcode },
+            dataType: 'json',
+            success: function (data) {
+
+                if (data == 'success') {
+                    $('#divEmailSuccess').show();
+                    $('#divEmail').hide();
+                }
+                else {
+                    $('#divEmailFail').show();
+                    $('#divEmail').hide();
+                }
+                return false;
+            }
+        });
+    }
+
+    function GetReferralInfo() {
+
+        var LoginId = $('#referralcode').val();
+
+         $.ajax({
+            url: '@Url.Action("GetMemberDetails", "Home")',
+            type: 'GET',
+             data: { LoginId: LoginId },
+            dataType: 'json',
+             success: function (data) {
+                 var arr = data.split('$');
+
+                 $('#referralregno').val(arr[0]);
+                 $('#referralname').val(arr[1]);;
+                 return false;
+            }
+        });
+    }
+
+    function ValidateForm() {
+
+        var error = '';
+        if (!InputMandatory("fname")) {
+            error = 'Please enter first name. !!';
+            return error;
+        }
+
+        if (!InputMandatory("email")) {
+            error = 'Please enter email id. !!';
+            return error;
+        }
+
+        if (!InputEmailValidate("email")) {
+            error = 'Please enter valid email id. !!';
+            return error;
+        }
+
+        if (!InputMandatory("mobile")) {
+            error = 'Please enter mobile no. !!';
+            return error;
+        }
+
+        if (!InputMobileValidate("mobile")) {
+            error = 'Please enter valid mobile no. !!';
+            return error;
+      }
+
+
+
+
+
+        //if (!SelectMandatory("country")) {
+        //    error = 'Please choose country. !!';
+        //    return error;
+        //}
+
+        if (!InputMandatory("referralcode")) {
+            error = 'Please enter referral code. !!';
+            return error;
+        }
+
+        if (!InputMandatory("referralname")) {
+            error = 'Please enter referrer name. !!';
+            return error;
+        }
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputEmailValidate(name) {
+        var val = $('#' + name + '').val();
+        var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test(val);
+    }
+
+    function InputMobileValidate(name) {
+        var val = $('#' + name + '').val();
+        var len = val.length;
+        if (len != 10) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    let digitValidate = function (ele) {
+        ele.value = ele.value.replace(/[^0-9]/g, '');
+    }
+
+    let tabChange = function (val) {
+        let ele = document.querySelectorAll('.otpInput');
+        if (ele[val - 1].value != '') {
+            ele[val].focus()
+        } else if (ele[val - 1].value == '') {
+            ele[val - 2].focus()
+        }
+    }
+
+</script>

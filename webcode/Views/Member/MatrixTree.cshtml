@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Community Tree</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="community-wrapper shadow-custom">
+                <div class="community-wrapper-inner">
+                    <div class="community">
+                        @Html.Raw(@ViewData["_matrixTreeCode"])
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        //GetTreeNodeList('3');
+        //return false;
+
+        $('.has-community > span').click(function () {
+            $(this).parent().toggleClass("open-tree");
+            $(this).nextAll().slideToggle(250);
+            return false;
+        });
+    });
+
+    function GetTreeNodeList(_id) {
+        var id = _id;
+
+         $.ajax({
+            url: '@Url.Action("GetMemberMatrixTree", "Member")',
+            type: 'GET',
+             data: { regno: id },
+            dataType: 'json',
+             success: function (data) {
+
+                 var arr = data.split('$');
+
+                 if (arr.length > 0) {
+
+                     for (var t = 0; t < arr.length; t++) {
+                         var idata = arr[t].split('^');
+
+                         if (idata.length > 0) {
+
+                             var _regno = idata[0];
+                             var _userid = idata[1];
+                             var _fullname = idata[2];
+                             var _haschild = idata[3];
+
+                             var _tag = $('#tag_' + _id + '');
+                             var _downlineclass = 'class="has-community"';
+                             var _clickevent = 'onclick="return OpenCloseTree(' + _regno + ');"'
+                             var _treecontent = '';
+
+                             if (_haschild == '0') {
+                                 _downlineclass = '';
+                                 _clickevent = '';
+                             }
+                             //attr-id=' + _regno +'
+                             _treecontent += '<ul><li ' + _downlineclass + ' id="tag_' + _regno + '" ' + _clickevent +'><span>' + _userid + ' - ' + _fullname + '</span>';
+
+                             //if (_downlineclass != '') {
+                             //    _treecontent += '<ul id="tag_' + _regno + '"></ul>';
+                             //}
+                             _treecontent += '</li></ul>';
+
+                             _tag.append(_treecontent);
+
+                             if (_haschild != '0') {
+                                 GetTreeNodeList(_regno);
+                             }
+
+                         }
+                     }
+                 }
+
+                 return false;
+            }
+        });
+    }
+
+    function OpenCloseTree(_tagid) {
+
+        var tag = '#tag_' + _tagid;
+        $('' + tag + ' > span').parent().toggleClass("open-tree");
+        $('' + tag + ' > span').nextAll().slideToggle(250);
+        return false;
+    }
+
+    //$('.has-community > span').click(function () {
+    //    $(this).parent().toggleClass("open-tree");
+    //    $(this).next().slideToggle(250);
+    //    return false;
+    //});
+</script>

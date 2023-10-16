@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Manage Investment</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Manage Investment</div>
+                        <div class="form-main">
+                            <div class="login-intup col-ff5">
+                                <span>Dhanu Wallet Balance</span>
+                                <input type="text" name="dhanuBalance" id="dhanuBalance" class="login-inp" value="@ViewData["_dhanubalance"]" readonly>
+                            </div>
+                            <div class="login-intup col-ff5">
+                                <span>Usdt Wallet Balance</span>
+                                <input type="text" name="usdtBalance" id="usdtBalance" class="login-inp" value="@ViewData["_usdtbalance"]" readonly>
+                            </div>
+                            <div class="login-intup col-ff5">
+                                <div class="custom-select">
+                                    <span>Payment Type</span>
+                                    <select id="paymenttype" name="paymenttype">
+                                      <option value="0">Choose Payment Type</option>
+                                      <option value="100_USDT">100 % USDT</option>
+                                      <option value="75_FUND_DHANU_25_USDT">75 % DHANU & 25 % USDT </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="login-intup col-ff5">
+                                <span>Investment Amount</span>
+                                <input type="number" name="amount" id="amount" class="login-inp">
+                            </div>
+                            <div class="login-intup col-ff" style="display:none;">
+                                <span class="investmentTitle">Choose Plan</span>
+                                <div class="selectInvestment">
+                                    <div class="investmentItem"><input type="radio" checked id="ROI" name="investmentType" value="3" /><label for="ROI">Crypto Deposit Plan</label></div>
+                                    <div class="investmentItem"><input type="radio" id="CryptoDeposit" name="investmentType" value="2" /><label for="CryptoDeposit">Daily ROI Plan</label></div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="submit-btn-wrap">
+                            @{
+                                string err = "";
+                                if (ViewData["_ErrorMessage"] != null)
+                                {
+                                    err = ViewData["_ErrorMessage"].ToString();
+                                }
+                            }
+                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                            <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Save Investment</button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $('#btnSubmit').click(function () {
+
+            //$("#btnSubmit").attr("disabled", true);
+            $("#btnSubmit").hide();
+
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                $("#btnSubmit").show();
+                //$("#btnSubmit").removeAttr("disabled");
+                return false;
+          }
+
+            var plan = $("input[name='investmentType']:checked").val();
+            var planname = '';
+
+            if (plan == 2) {
+                planname = 'Daily ROI Plan';
+            }
+            else if (plan == 3) {
+                planname = 'Crypto Deposit Plan';
+            }
+
+            if (!confirm('Are you sure to make crypto deposit investment?')) {
+                $("#btnSubmit").show();
+                return false;
+            }
+
+            return true;
+        });
+    });
+
+    function ValidateForm() {
+
+        var error = '';
+
+        if (!SelectMandatory("paymenttype")) {
+            error = 'Please choose payment type. !!';
+            return error;
+        }
+
+        if (!InputMandatory("amount")) {
+            error = 'Please enter investment amount. !!';
+            return error;
+        }
+
+        if (!InputAmountValidate("amount")) {
+            error = 'Please enter valid investment amount. !!';
+            return error;
+      }
+
+      var amt = $('#amount').val();
+
+      if (parseFloat(amt) < 25) {
+        error = 'Please enter valid amount. Minimum investment amount is $25. !!';
+        return error;
+      }
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputAmountValidate(name) {
+        var val = $('#' + name + '').val();
+        if (parseFloat(val) <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+</script>

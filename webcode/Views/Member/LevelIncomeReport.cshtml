@@ -1,0 +1,85 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Level Income Report</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    @*<div class="cm-tbl-header">
+                            <div class="cm-data-searchDate">
+                                <div class="date-filet">
+                                    <div id="reportrange" class="cm-date-picker">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="fa fa-caret-down"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Inc. Date</th>
+                                <th>Inv. Amount</th>
+                                <th>Inc. Level</th>
+                                <th>Income amt.</th>
+                                <th>Flush amt.</th>
+                                <th>Dhanu Coin Cr.</th>
+                                <th>Remark</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td><p>@dr["TransactionDate"].ToString()</p></td>
+                                        <td data-dolor="$">@dr["Investment"].ToString()</td>
+                                        <td><span>@dr["Level"].ToString()</span><span>@dr["LevelRate"].ToString() %</span><span>Dhanu Rate - @dr["CoinRate"].ToString() </span></td>
+                                        <td data-dolor="$">@dr["Income"].ToString()</td>
+                                        <td data-dolor="$">@dr["Flushamount"].ToString()</td>
+                                        <td>@dr["Coin"].ToString()</td>
+                                        <td><p>@dr["Remark"].ToString()</p></td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>Totals</td>
+                                <td></td>
+                                <td></td>
+                                <td data-dolor="$"></td>
+                                <td data-dolor="$"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+

@@ -1,0 +1,176 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_HOLayout.cshtml";
+
+    var detail= ViewData["_report"] as DataTable;
+}
+
+<div class="dss-right-section noside-right-full">
+
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Process Withdrawal Request</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+
+
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Withdrawal Request</div>
+                        <div class="fundFormWrap">
+                            @{
+                                if (detail.Rows[0]["WalletId"].ToString() == "1")
+                                {
+                                    <div class="fundType">
+                                        <div class="fundDesign dhanuFund"><img src="/assets_backend/images/dhanu1.png" alt="logo"> Dhanu</div>
+                                    </div>
+                                }
+                                else if (detail.Rows[0]["WalletId"].ToString() == "2")
+                                {
+                                    <div class="fundType">
+                                        <div class="fundDesign usdtFund"><img src="/assets_backend/images/usdt.png" alt="logo"> USDT</div>
+                                    </div>
+                                }
+                            }
+
+
+                            <div class="prasonal-form">
+                                <div class="form-main">
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Investor ID</span>
+                                        <label>@detail.Rows[0]["Loginid"].ToString()</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Investor Name</span>
+                                        <label>@detail.Rows[0]["Name"].ToString()</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Transaction No.</span>
+                                        <label>@detail.Rows[0]["TransactionNo"].ToString()</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Request Date</span>
+                                        <label>@detail.Rows[0]["EntryDate"].ToString()</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Amount</span>
+                                        <label>$ @detail.Rows[0]["Amount"].ToString()</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Deposit Address</span>
+                                        <label>@detail.Rows[0]["Address"].ToString()</label>
+                                    </div>
+                                    
+                                    <div class="login-intup col-ff5">
+                                        <div class="custom-select">
+                                            <span>Status</span>
+                                            <select id="ddlstatus" name="ddlstatus">
+                                                <option value="0">Choose Status</option>
+                                                <option value="1">Approve</option>
+                                                <option value="2">Reject</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="login-intup col-ff5">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="submit-btn">
+                                    @{
+                                        string err = "";
+                                        string suc = "";
+                                        if (ViewData["_ErrorMessage"] != null)
+                                        {
+                                            err = ViewData["_ErrorMessage"].ToString();
+                                        }
+
+                                        if (ViewData["_SuccessMessage"] != null)
+                                        {
+                                            suc = ViewData["_SuccessMessage"].ToString();
+                                        }
+                                    }
+                                    <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsuc" style="color:#eae73f">@suc</label><br />
+                                    <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Save Status</button>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <div class="submit-btn-wrap text-align-left">
+
+                            @*<label id="lblerr" style="color:#cb0f0f">@err</label>*@<br />
+                            @*<button type="submit" class="admin-btn" id="btnSubmit" name="submit">Submit Request</button>*@
+                            <input type="hidden" name="RequestId" id="RequestId" value="@detail.Rows[0]["RequestId"].ToString()">
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+
+
+        $('#btnSubmit').click(function () {
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                return false;
+            }
+            return true;
+        });
+    });
+
+    function ValidateForm() {
+
+        var error = '';
+
+        if (!SelectMandatory("ddlstatus")) {
+            error = 'Please choose request status. !!';
+            return error;
+        }
+
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputAmountValidate(name) {
+        var val = $('#' + name + '').val();
+        if (parseFloat(val) <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+</script>

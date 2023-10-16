@@ -1,0 +1,347 @@
+﻿@using System.Data;
+@{
+    Layout = "~/Views/Shared/_HOLayout.cshtml";
+    var _detail = ViewData["_details"] as DataTable;
+}
+
+<div class="dss-right-section noside-right-full">
+
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Wallet Fund Recharge</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Wallet Fund Recharge</div>
+                        <div class="form-main">
+                          <div class="login-intup col-ff5">
+                            <span>Investor Id</span>
+                            <input type="text" name="investorid" id="investorid" class="login-inp" value="@_detail.Rows[0]["LoginId"]" readonly>
+                          </div>
+                          <div class="login-intup col-ff5">
+                            <span>Reference no.</span>
+                            <input type="text" name="referenceno" id="referenceno" class="login-inp" value="@_detail.Rows[0]["TrReferenceno"]" readonly>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <span>Dhanu Coin Rate ($)</span>
+                            <input type="text" name="dhanurate" id="dhanurate" class="login-inp" value="@ViewData["_dhanucoinrate"]" disabled>
+                          </div>
+                          <div class="login-intup col-ff5">
+                            <span>USDT Coin Rate ($)</span>
+                            <input type="text" name="usdtrate" id="usdtrate" class="login-inp" value="@ViewData["_usdtcoinrate"]" disabled>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <span>Add Dhanu Coin</span>
+                            <input type="text" name="dhanuamount" id="dhanuamount" value="@_detail.Rows[0]["DhanuAmount"]" class="login-inp">
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none">
+                            <span>Add Dhanu Amount (Crypto Deposit)</span>
+                            <input type="text" name="dhanucoin" id="dhanucoin" value="0" class="login-inp" disabled>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <span>Add USDT Amount (Crypto Deposit)</span>
+                            <input type="text" name="usdtamount" id="usdtamount" value="@_detail.Rows[0]["UsdtAmount"]" class="login-inp">
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <span>Add USDT Amount (Trading Pool)</span>
+                            <input type="text" name="tpusdtamount" id="tpusdtamount" value="@_detail.Rows[0]["tpUsdtAmount"]" class="login-inp">
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Add USDT Coin</span>
+                            <input type="text" name="usdtcoin" id="usdtcoin" value="0" class="login-inp" disabled>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <span>Total Recharge Coin</span>
+                            <input type="number" name="amount" id="amount" value="0" class="login-inp" disabled>
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Payment Receipt</span>
+                            <input type="file" name="file" class="login-inp">
+                          </div>
+                          <div class="login-intup col-ff5">
+                            <span>Remarks</span>
+                            <textarea class="login-inp text-area" id="remark" name="remark"></textarea>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            <div class="custom-select">
+                              <span>Status</span>
+                              <select id="status" name="status">
+                                <option value="0">Choose Status</option>
+                                <option value="1">Approve</option>
+                                <option value="2">Reject</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Recharge amount ($)</span>
+                            <input type="number" class="login-inp">
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Recharge amount (INR)</span>
+                            <input type="text" name="name" class="login-inp" readonly>
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Dhanu/USDT Current Exchange Rate (INR)</span>
+                            <input type="text" name="name" class="login-inp" readonly>
+                          </div>
+                          <div class="login-intup col-ff5" style="display:none;">
+                            <span>Estimated Dhanu/USDT Coins</span>
+                            <input type="text" name="name" class="login-inp" readonly>
+                          </div>
+
+                          <div class="login-intup col-ff5">
+                            &nbsp;
+                          </div>
+
+                        </div>
+                        <div class="submit-btn-wrap">
+                            @{
+                                string err = "";
+                                if (ViewData["_ErrorMessage"] != null)
+                                {
+                                    err = ViewData["_ErrorMessage"].ToString();
+                                }
+                            }
+                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                            <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Submit Request</button>
+                            <input type="hidden" id="HFregno" name="HFregno" value="@_detail.Rows[0]["regno"]" />
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+
+        //DhanuCalc();
+        //UsdtCalc();
+        TotalCalc();
+
+        $('#dhanuamount').on('change', function () {
+
+            if (!InputMandatory("dhanuamount")) {
+                alert('Please enter recharge amount. !!');
+                return false;
+            }
+
+            if (!InputAmountValidate("dhanuamount")) {
+                alert('Please enter valid recharge amount. !!');
+                return false;
+            }
+
+            //DhanuCalc();
+            TotalCalc();
+            return false;
+        });
+
+        $('#dhanucoin').on('change', function () {
+
+            if (!InputMandatory("dhanucoin")) {
+                alert('Please enter recharge amount. !!');
+                return false;
+            }
+
+            if (!InputAmountValidate("dhanucoin")) {
+                alert('Please enter valid recharge amount. !!');
+                return false;
+            }
+
+            DhanuCalc();
+            TotalCalc();
+            return false;
+        });
+
+
+        $('#usdtamount').on('change', function () {
+
+            if (!InputMandatory("usdtamount")) {
+                alert('Please enter recharge amount. !!');
+                return false;
+            }
+
+            if (!InputAmountValidate("usdtamount")) {
+                alert('Please enter valid recharge amount. !!');
+                return false;
+            }
+
+            //UsdtCalc();
+            TotalCalc();
+            return false;
+        });
+
+      $('#tpusdtamount').on('change', function () {
+
+        if (!InputMandatory("tpusdtamount")) {
+          alert('Please enter recharge amount. !!');
+          return false;
+        }
+
+        if (!InputAmountValidate("tpusdtamount")) {
+          alert('Please enter valid recharge amount. !!');
+          return false;
+        }
+
+        //UsdtCalc();
+        TotalCalc();
+        return false;
+      });
+
+        $('#usdtcoin').on('change', function () {
+
+            if (!InputMandatory("usdtcoin")) {
+                alert('Please enter recharge amount. !!');
+                return false;
+            }
+
+            if (!InputAmountValidate("usdtcoin")) {
+                alert('Please enter valid recharge amount. !!');
+                return false;
+            }
+
+            //UsdtCalc();
+            TotalCalc();
+            return false;
+        });
+
+        $('#btnSubmit').click(function () {
+            $("#btnSubmit").hide();
+            //$("#btnSubmit").attr("disabled", true);
+
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                $("#btnSubmit").show();
+                //$("#btnSubmit").removeAttr("disabled");
+                return false;
+            }
+            return true;
+        });
+    });
+
+    function DhanuCalc() {
+
+        var _rate = $('#dhanurate').val();
+        var _amount = $('#dhanuamount').val();
+        var _coin = $('#dhanucoin').val();
+
+        if (_amount == '') {
+            _amount = 0;
+        }
+
+        if (_coin == '') {
+            _coin = 0;
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate));
+        }
+        else if (parseFloat(_coin) > 0) {
+
+            _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+        }
+
+        $('#dhanuamount').val(_amount);
+        $('#dhanucoin').val(_coin);
+    }
+
+    function UsdtCalc() {
+
+        var _rate = $('#usdtrate').val();
+        var _amount = $('#usdtamount').val();
+        var _coin = $('#usdtcoin').val();
+
+        if (_amount == '') {
+            _amount = 0;
+        }
+
+        if (_coin == '') {
+            _coin = 0;
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate));
+        }
+        else if (parseFloat(_coin) > 0) {
+
+            _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+        }
+
+        $('#usdtamount').val(_amount);
+        $('#usdtcoin').val(_coin);
+    }
+
+    function TotalCalc() {
+
+        var _dhanu = $('#dhanuamount').val();
+      var _usdt = $('#usdtamount').val();
+      var _tpusdt = $('#tpusdtamount').val();
+
+      var _total = parseFloat(parseFloat(_dhanu) + parseFloat(_usdt) + parseFloat(_tpusdt));
+
+        $('#amount').val(_total);
+    }
+
+    function ValidateForm() {
+
+        var error = '';
+        if (!SelectMandatory("status")) {
+            error = 'Please choose status. !!';
+            return error;
+        }
+
+        //if (!InputMandatory("amount")) {
+        //    error = 'Please enter recharge amount. !!';
+        //    return error;
+        //}
+
+        //if (!InputAmountValidate("amount")) {
+        //    error = 'Please enter valid recharge amount. !!';
+        //    return error;
+        //}
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputAmountValidate(name) {
+        var val = $('#' + name + '').val();
+        if (parseFloat(val) <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+</script>

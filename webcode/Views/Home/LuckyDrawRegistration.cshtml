@@ -1,0 +1,235 @@
+﻿@{
+}
+
+<div class="baap-lucy-drow">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-sm-12 col-md-6">
+        @using (Html.BeginForm())
+        {
+          <div class="lucky-drow-left">
+            <h1>@DateTime.Now.ToLongDateString()</h1>
+            <h2><span>BAAP Network</span> Lucky Draw</h2>
+            <h2>Join the Event</h2>
+            <h3>Register yourself to Lucky Draw</h3>
+            <div class="lucky-draw-register">
+              <input type="text" id="Loginid" name="Loginid" placeholder="BAAP ID (Optional)">
+              <input type="text" id="fullname" name="fullname" placeholder="Full Name*">
+              <input type="text" id="Email" name="Email" placeholder="Email*">
+              <input type="text" id="Mobile" name="Mobile" placeholder="Mobile No.*" maxlength="10">
+
+              @{
+                string err = "";
+                if (ViewData["_ErrorMessage"] != null)
+                {
+                  err = ViewData["_ErrorMessage"].ToString();
+                }
+
+              }
+              <label id="lblerr" style="color:#FCC539">@err</label><br />
+              <button type="submit" id="btnSubmit">Register for this event </button>
+              <input type="hidden" id="regno" name="regno" value="0" />
+            </div>
+          </div>
+        }
+
+      </div>
+      <div class="col-lg-5 col-sm-12 col-md-6">
+        <div class="winner-card">
+          <div class="winner-card-main">
+            @*<h1>2</h1>*@
+            <div class="winner-card-image">
+              <img src="~/assets/images/winner-image/lucky/activa.png">
+            </div>
+            <h2>Honda Activa</h2>
+            <p>2 Members</p>
+          </div>
+          <div class="winner-card-main active">
+            @*<h1>1</h1>*@
+            <div class="winner-card-image">
+              <img src="~/assets/images/winner-image/lucky/Car.png">
+            </div>
+            <h2>Alto Car</h2>
+            <p>1 Members</p>
+          </div>
+          <div class="winner-card-main">
+            @*<h1>3</h1>*@
+            <div class="winner-card-image">
+              <img src="~/assets/images/winner-image/lucky/Phone.png">
+            </div>
+            <h2>Android Mobile </h2>
+            <p>5 Members</p>
+          </div>
+        </div>
+        <div class="more-price">
+          <h1>More Prizes</h1>
+          <div class="more-price-details">
+            @*<div class="price-number">10</div>*@
+            <div class="price-image">
+              <img src="~/assets/images/logo.png" alt="">
+            </div>
+            <div class="price-names price-names-width">
+              <h1>Gold Coin </h1>
+              <p>10 gms</p>
+            </div>
+            <div class="price-names">
+              <h1>10</h1>
+              <p>Members</p>
+            </div>
+            <span></span>
+          </div>
+          <div class="more-price-details">
+            @*<div class="price-number">10</div>*@
+            <div class="price-image">
+              <img src="~/assets/images/winner-image/lucky/Microwave.png" alt="">
+            </div>
+            <div class="price-names price-names-width">
+              <h1>Microwave</h1>
+              <p>Oven</p>
+            </div>
+            <div class="price-names">
+              <h1>10</h1>
+              <p>Members</p>
+            </div>
+            <span></span>
+          </div>
+          <div class="more-price-details">
+            @*<div class="price-number">21</div>*@
+            <div class="price-image">
+              <img src="~/assets/images/winner-image/lucky/Induction.png" alt="">
+            </div>
+            <div class="price-names price-names-width">
+              <h1>Induction</h1>
+              <p>Cooktop</p>
+            </div>
+            <div class="price-names">
+              <h1>21</h1>
+              <p>Members</p>
+            </div>
+            <span></span>
+          </div>
+          <div class="more-price-details">
+            @*<div class="price-number">101</div>*@
+            <div class="price-image">
+              <img src="~/assets/images/winner-image/lucky/Bag.png" alt="">
+            </div>
+            <div class="price-names price-names-width">
+              <h1>Bag</h1>
+              <p>Shopping</p>
+            </div>
+            <div class="price-names">
+              <h1>101</h1>
+              <p>Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+    $('#Loginid').on('change', function () {
+
+      if ($('#Loginid').val() != '') {
+        GetReferralInfo();
+        return false;
+      }
+    });
+
+    $('#btnSubmit').click(function () {
+      var err = ValidateForm1();
+      if (err != '') {
+        $('#lblerr').text(err);
+        return false;
+      }
+      return true;
+    });
+  });
+
+  function GetReferralInfo() {
+
+    var LoginId = $('#Loginid').val();
+
+    $.ajax({
+      url: '@Url.Action("GetMemberDetails", "Home")',
+      type: 'GET',
+      data: { LoginId: LoginId },
+      dataType: 'json',
+      success: function (data) {
+        var arr = data.split('$');
+
+        $('#regno').val(arr[0]);
+        $('#fullname').val(arr[1]);
+        $('#Email').val(arr[2]);
+        $('#Mobile').val(arr[3]);
+        return false;
+      }
+    });
+  }
+
+  function ValidateForm1() {
+
+    var error = '';
+    if (!InputMandatory("fullname")) {
+      error = 'Please enter full name. !!';
+      return error;
+    }
+
+    if (!InputMandatory("Email")) {
+      error = 'Please enter email id. !!';
+      return error;
+    }
+
+    if (!InputEmailValidate("Email")) {
+      error = 'Please enter valid email id. !!';
+      return error;
+    }
+
+    if (!InputMandatory("Mobile")) {
+      error = 'Please enter mobile no. !!';
+      return error;
+    }
+
+    if (!InputMobileValidate("Mobile")) {
+      error = 'Please enter valid mobile no. !!';
+      return error;
+    }
+    return error;
+  }
+
+  function InputMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == '') {
+      return false;
+    }
+    return true;
+  }
+
+  function InputEmailValidate(name) {
+    var val = $('#' + name + '').val();
+    var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test(val);
+  }
+
+  function InputMobileValidate(name) {
+    var val = $('#' + name + '').val();
+    var len = val.length;
+    if (len != 10) {
+      return false;
+    }
+    return true;
+  }
+
+  function SelectMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == 0) {
+      return false;
+    }
+    return true;
+  }
+
+</script>

@@ -1,0 +1,72 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Withdrawal Request Report</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    @*<div class="cm-tbl-header">
+                            <div class="cm-data-searchDate">
+                                <div class="date-filet">
+                                    <div id="reportrange" class="cm-date-picker">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="fa fa-caret-down"></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Req. Date</th>
+                                <th>Request Coin</th>
+                                <th>Platform Fees</th>
+                                <th>Transfer Coin</th>
+                                <th>Wallet Type</th>
+                                <th>Deposit Address</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                <tr>
+                                    <th>@i</th>
+                                    <td><p>@dr["EntryDate"].ToString()</p></td>
+                                    <td><p>@dr["RequestCoin"].ToString()</p></td>
+                                    <td><p>@dr["PlatformFees"].ToString()</p></td>
+                                    <td><p>@dr["TransferCoin"].ToString()</p></td>
+                                    <td><p>@dr["Wallet"].ToString()</p></td>
+                                    <td><p>@dr["Address"].ToString()</p></td>
+                                    <td><p>@dr["Status"].ToString()</p></td>
+                                </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>

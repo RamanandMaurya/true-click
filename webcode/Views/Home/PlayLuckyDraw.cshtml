@@ -1,0 +1,522 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+<div class="baap-lucy-drow">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="luckdraw-hadd">
+          <h1>Play And Win</h1>
+        </div>
+        <div class="lucky-draw-btn-New">
+          <div id="btn_car" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Alto-winner.png">
+          </div>
+          <div id="btn_bike" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Activa-winner.png">
+          </div>
+          <div id="btn_mobile" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Mobile-Winner.png">
+          </div>
+          <div id="btn_coin" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Gold-Coin-winner.png">
+          </div>
+          <div id="btn_microwave" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Microwave-winner.png">
+          </div>
+          <div id="btn_induction" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Induction-Winner.png">
+          </div>
+          <div id="btn_bag" class="all-lucky-price modal-btn">
+            <img src="~/assets/images/winner-image/lucky/Bag-Winner.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<input type="hidden" id="hf_giftid" value="@ViewData["GiftId"]" />
+<div id="modal_car" class="modal-container">
+  @{
+    if (@ViewData["AltoCarStatus"] != null)
+    {
+      if (@ViewData["AltoCarStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Alto-winner.png">
+              <button type="submit" id="btnStart_car" name="start" value="car">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/car.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Alto Car</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>01</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_altocar"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_altocar"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_bike" class="modal-container">
+  @{
+    if (@ViewData["ActiveBikeStatus"] != null)
+    {
+      if (@ViewData["ActiveBikeStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Activa-winner.png">
+              <button type="submit" id="btnStart_bike" name="start" value="bike">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/bike.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Honda Activa</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>02</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_activabike"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_activabike"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_mobile" class="modal-container">
+  @{
+    if (@ViewData["MobileStatus"] != null)
+    {
+      if (@ViewData["MobileStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Mobile-Winner.png">
+              <button type="submit" id="btnStart_mobile" name="start" value="mobile">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/mobile.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Android Mobile</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>05</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_mobile"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_mobile"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_coin" class="modal-container">
+  @{
+    if (@ViewData["GoldCoinStatus"] != null)
+    {
+      if (@ViewData["GoldCoinStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Gold-Coin-winner.png">
+              <button type="submit" id="btnStart_coin" name="start" value="coin">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/coin.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Gold Coin</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>10</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_goldcoin"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_goldcoin"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_microwave" class="modal-container">
+  @{
+    if (@ViewData["MicrowaveStatus"] != null)
+    {
+      if (@ViewData["MicrowaveStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Microwave-winner.png">
+              <button type="submit" id="btnStart_microwave" name="start" value="microwave">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/microwave.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Microwave Oven</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>10</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_microwave"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_microwave"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_induction" class="modal-container">
+  @{
+    if (@ViewData["InductionStatus"] != null)
+    {
+      if (@ViewData["InductionStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Induction-Winner.png">
+              <button type="submit" id="btnStart_induction" name="start" value="induction">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/induction.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Induction Cooktop</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>21</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_induction"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_induction"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<div id="modal_bag" class="modal-container">
+  @{
+    if (@ViewData["BagStatus"] != null)
+    {
+      if (@ViewData["BagStatus"].ToString() == "0")
+      {
+        <div class="modal-content firstModel">
+          @using (Html.BeginForm())
+          {
+            <div class="modal-body">
+              <h1><span>BAAP Network</span> Lucky Draw</h1>
+              <img src="~/assets/images/winner-image/lucky/Bag-Winner.png">
+              <button type="submit" id="btnStart_bag" name="start" value="bag">Start</button>
+            </div>
+          }
+
+        </div>
+      }
+      else
+      {
+        <div class="modal-content secondModel">
+          <h4><img src="~/assets/images/winner-image/congratulations.png">Congratulations <img src="~/assets/images/winner-image/congratulations.png"></h4>
+          <h6>you are the lucky winner</h6>
+          <div class="modal-body">
+            <div class="main-model-price">
+              <div class="model-price-image">
+                <img src="~/assets/images/winner-image/bag.png">
+              </div>
+              <div class="model-price-coin">
+                <h1>Executive Bag</h1>
+              </div>
+              <div class="model-price-member">
+                <h2>101</h2>
+                <p>Member</p>
+              </div>
+            </div>
+            @if (ViewData["_report_bag"] != null)
+            {
+              @foreach (DataRow dr in (ViewData["_report_bag"] as DataTable).Rows)
+              {
+                <div class="modelprice-members-details">
+                  <div class="left-winner-member">
+                    <h1>@dr["Fullname"].ToString()</h1>
+                    <p>@dr["Email"].ToString()</p>
+                  </div>
+                  <div class="member-unique-code">
+                    <h2>@dr["UniqueCode"].ToString()</h2>
+                    <p>Unique Code</p>
+                  </div>
+                </div>
+              }
+            }
+
+          </div>
+        </div>
+      }
+    }
+  }
+</div>
+<script src="~/assets/js/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var GiftId = $('#hf_giftid').val();
+
+    if (GiftId == '1') {
+      $('#modal_car').addClass('popup-active');
+    }
+    else if (GiftId == '2') {
+      $('#modal_bike').addClass('popup-active');
+    }
+    else if (GiftId == '3') {
+      $('#modal_mobile').addClass('popup-active');
+    }
+    else if (GiftId == '4') {
+      $('#modal_coin').addClass('popup-active');
+    }
+    else if (GiftId == '5') {
+      $('#modal_microwave').addClass('popup-active');
+    }
+    else if (GiftId == '6') {
+      $('#modal_induction').addClass('popup-active');
+    }
+    else if (GiftId == '7') {
+      $('#modal_bag').addClass('popup-active');
+    }
+    else {
+      $('#modal_car').addClass('popup-active');
+    }
+
+
+    $('#btn_car').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_car').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_bike').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_bike').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_mobile').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_mobile').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_coin').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_coin').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_microwave').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_microwave').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_induction').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_induction').addClass('popup-active');
+      return false;
+    });
+
+    $('#btn_bag').click(function () {
+      $('.modal-container').removeClass('popup-active');
+      $('#modal_bag').addClass('popup-active');
+      return false;
+    });
+  });
+</script>

@@ -1,0 +1,63 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_HOLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Dhanu Network Dhanu Coin report</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Investor ID</th>
+
+                                <th>Mobile</th>
+                                <th>Email</th>
+                                <th>Dhanu Coin Balance</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td><span>@dr["LoginId"].ToString()</span> <span>@dr["Name"].ToString()</span></td>
+
+
+                                        <td><p>@dr["Mobile"].ToString()</p></td>
+                                        <td><p>@dr["emailId"].ToString()</p></td>
+                                        <td><p>@dr["DhanuCoin"].ToString()</p></td>
+
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_HOLayout.cshtml";
+}
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Success</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="success-page shadow-custom">
+
+                <div class="success-page-inner">
+                    <div class="success-check"></div>
+                    <div class="success-title">Success!</div>
+                    <div class="success-content">
+                        @{
+                            if (ViewData["_SuccessMessage"] != null)
+                            {
+                                <label>@ViewData["_SuccessMessage"]</label>
+                            }
+                        }
+                    </div>
+                    @*<div class="success-btn-submit">
+                            <a href="" class="admin-btn">Continue</a>
+                        </div>*@
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

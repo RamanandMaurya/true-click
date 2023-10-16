@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_HOLayout.cshtml";
+}
+
+
+<div class="dss-right-section noside-right-full">
+
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Update Coin Rate</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Set Coin Rate</div>
+                        <div class="form-main">
+
+                            <div class="login-intup col-ff5">
+                                <div class="custom-select">
+                                    <span>Coin</span>
+                                    <select id="coin" name="coin">
+                                        <option value="0">Choose Coin</option>
+                                        <option value="1">Dhanu</option>
+                                        <option value="2">Usdt</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="login-intup col-ff5">
+                                <span>Set Rate (INR)</span>
+                                <input type="text" name="amount" id="amount" value="0" class="login-inp">
+                            </div>
+
+                            <div class="login-intup col-ff5">
+                                &nbsp;
+                            </div>
+
+                        </div>
+                        <div class="submit-btn-wrap">
+                            @{
+                                string err = "";
+                                string errSucc = "";
+                                if (ViewData["_ErrorMessage"] != null)
+                                {
+                                    err = ViewData["_ErrorMessage"].ToString();
+                                }
+                                if (ViewData["_SuccessMessage"] != null)
+                                {
+                                    errSucc = ViewData["_SuccessMessage"].ToString();
+                                }
+                            }
+                            <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsucc" style="color:#376706">@errSucc</label><br />
+                            <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Submit Request</button>
+                            
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

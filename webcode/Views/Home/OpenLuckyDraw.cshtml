@@ -1,0 +1,125 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+<div class="baap-lucy-drow">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="lucky-draw-btn">
+          <a href="~/play-lucky-draw">Play & Win Lucky Draw</a>
+        </div>
+        <div class="price-data-tabel">
+          <div class="price-data-tabelinner">
+            @{ 
+              @if (ViewData["_report"] != null)
+              {
+                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                {
+                  <div class="data-tabel-main-box">
+                    <div class="first-tabel-data">
+                      <h1>@dr["Fullname"].ToString()</h1>
+                      <p>@dr["Email"].ToString()</p>
+                    </div>
+                    <div class="first-tabel-data-2">
+                      <h1>@dr["UniqueCode"].ToString()</h1>
+                      <p>Unique Code</p>
+                    </div>
+                  </div>
+
+                  }
+                }
+
+              }
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-container">
+  <div class="modal-content firstModel">
+    <div class="modal-body">
+      <h1><span>BAAP Network</span> Lucky Draw</h1>
+      <img src="~/assets/images/winner-image/9.png">
+      <button class="openModel">Start</button>
+    </div>
+  </div>
+  <div class="modal-content secondModel">
+    <div class="modal-body">
+      <div class="main-model-price">
+        <div class="model-price-image">
+          <img src="~/assets/images/winner-image/10.png">
+        </div>
+        <div class="model-price-coin">
+          <h1>Gold Coin</h1>
+          <p>10 gms</p>
+        </div>
+        <div class="model-price-member">
+          <h2>10</h2>
+          <p>Members</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+      <div class="modelprice-members-details">
+        <div class="left-winner-member">
+          <h1>Darlene Robertson</h1>
+          <p>daro@gmail.com</p>
+        </div>
+        <div class="member-unique-code">
+          <h2>851052</h2>
+          <p>Unique Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

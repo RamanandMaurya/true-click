@@ -1,0 +1,203 @@
+﻿@{
+  Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">USDT Transfer From Dhanu Pool To Trading Pool</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="prasonal-dd shadow-custom">
+        @using (Html.BeginForm())
+        {
+          <div class="prasonal-form">
+            <div class="pre-title-ue">Fund Transfer (From Dhanu Pool To Trading Pool)</div>
+            
+            <div class="fundFormWrap">
+              
+              <div class="fundType mt-adds">
+                <div class="fundDesign usdtFund"><img src="/assets_backend/images/usdt.png" alt="logo"> USDT (Crypto Deposit)</div>
+              </div>
+
+              <div class="formWithQR">
+                <div class="mainQRCode hideMobile">
+
+                </div>
+                <div class="form-main no-flex">
+                  <div id="divUsdt" class="login-intup col-ff-maxL">
+                    @*<div class="all-lbl">USDT </div>*@
+                    <div class="all-lbl-inp threeInp">
+                      <div class="single-row-inp">
+                        <span>Balance (Coin)</span>
+                        <label class="login-inp">@ViewData["_usdtbalance"]</label>
+                      </div>
+                    </div>
+                    <div class="all-lbl-inp threeInp">
+                      <div class="single-row-inp">
+                        <span>Coins</span>
+                        <input type="number" name="usdtcoin" id="usdtcoin" value="" placeholder="Enter amount" class="login-inp color-yellow" autocomplete="off">
+                      </div>
+                      <div class="single-row-inp">
+                        <span>Amount ($)</span>
+                        <input type="text" name="usdtamount" id="usdtamount" value="0" class="login-inp" disabled>
+                      </div>
+                      <div class="single-row-inp">
+                        <span>Amount <label>(<img src="/assets_backend/images/rupees.png" alt="logo">)</label></span>
+                        <input type="number" name="usdtcurrency" id="usdtcurrency" value="0" class="login-inp color-red" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="login-intup col-ff-maxL">
+                    <div class="all-lbl">Remark</div>
+                    <textarea class="login-inp text-area" id="remark" name="remark"></textarea>
+                  </div>
+                  <div class="submit-btn-wrap text-align-left">
+                    @{
+                      string err2 = "";
+                      if (ViewData["_ErrorMessage"] != null)
+                      {
+                        err2 = ViewData["_ErrorMessage"].ToString();
+                      }
+                    }
+                    <label id="lblerrUsdt" style="color:#cb0f0f">@err2</label><br />
+                    <button type="submit" class="admin-btn" id="btnSubmit" name="btnSubmit">Submit Coin Transfer</button>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="formWithQR">
+                <div class="form-main no-flex">
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="submit-btn-wrap text-align-left">
+              <input type="hidden" name="usdtrate" id="usdtrate" value="@ViewData["_usdtcoinrate"]">
+              <input type="hidden" name="currencyrate" id="currencyrate" value="@ViewData["_currencyrate"]" />
+            </div>
+          </div>
+
+        }
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $(document).ready(function () {
+
+    $('#usdtamount').on('change', function () {
+
+      if (!InputMandatory("usdtamount")) {
+        $('#usdtamount').val('0');
+        $('#usdtcoin').val('0');
+      }
+
+      if (!InputAmountValidate("usdtamount")) {
+        $('#usdtamount').val('0');
+        $('#usdtcoin').val('0');
+      }
+
+      UsdtCalc();
+      return false;
+    });
+
+    $('#usdtcoin').on('change', function () {
+      
+      if (!InputMandatory("usdtcoin")) {
+        $('#usdtcoin').val('0');
+        $('#usdtamount').val('0');
+      }
+
+      if (!InputAmountValidate("usdtcoin")) {
+        $('#usdtcoin').val('0');
+        $('#usdtamount').val('0');
+      }
+
+      UsdtCalc();
+      return false;
+    });
+
+    $('#btnSubmit').click(function () {
+
+      $("#btnSubmit").hide();
+
+      var err = '';
+      if (err != '') {
+        $('#lblerr').text(err);
+        $("#btnSubmit").show();
+        return false;
+      }
+      return true;
+    });
+  });
+
+  function UsdtCalc() {
+
+    var _rate = $('#usdtrate').val();
+    var _amount = $('#usdtamount').val();
+    var _coin = $('#usdtcoin').val();
+    var _currencyrate = $('#currencyrate').val();
+    var _currencyamount = 0;
+
+    if (_amount == '') {
+      _amount = 0;
+    }
+
+    if (_coin == '') {
+      _coin = 0;
+    }
+
+    if (_currencyrate == '') {
+      _currencyrate = 0;
+    }
+
+    if (parseFloat(_amount) > 0) {
+
+      _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate)).toFixed(4);
+    }
+    else if (parseFloat(_coin) > 0) {
+
+      _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+    }
+
+    if (parseFloat(_amount) > 0) {
+
+      _currencyamount = parseFloat(parseFloat(_amount) * parseFloat(_currencyrate));
+    }
+
+    $('#usdtamount').val(_amount);
+    $('#usdtcoin').val(_coin);
+    $('#usdtcurrency').val(_currencyamount);
+  }
+
+  function InputMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == '') {
+      return false;
+    }
+    return true;
+  }
+
+  function InputAmountValidate(name) {
+    var val = $('#' + name + '').val();
+    if (parseFloat(val) <= 0) {
+      return false;
+    }
+    return true;
+  }
+</script>

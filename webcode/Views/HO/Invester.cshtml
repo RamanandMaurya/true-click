@@ -1,0 +1,71 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+
+  Layout = "~/Views/Shared/_HOLayout.cshtml";
+}
+
+<div class="dashboard-center">
+  <form enctype="multipart/form-data" method="post">
+    @using (Html.BeginForm())
+    {
+      <div class="dashboard-center-itm">
+        <div class="prasonal-dd shadow-custom">
+          <div class="prasonal-form">
+            <div class="pre-title-ue">Verify Invester</div>
+            <div class="form-main form-main-2">
+              <div class="login-intup col-ff5">
+                <span>Enter InvesterID</span>
+                <input type="text" name="InvesterID" id="InvesterID" class="login-inp">
+              </div>
+              <div class="login-intup col-ff5">
+                <div class="edit-p-detail"><button type="submit" class="admin-btn" id="btnSubmit" name="submit">Submit</button></div>
+                <br />
+                @{
+                  string err = "";
+                  if (ViewData["_ErrorMessage"] != null)
+                  {
+                    err = ViewData["_ErrorMessage"].ToString();
+                  }
+                }
+                <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </form>
+</div>
+
+<script src="~/assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btnSubmit').click(function () {
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                return false;
+            }
+            return true;
+        });
+    });
+
+    function ValidateForm() {
+        var error = '';
+        if (!InputMandatory("InvesterID")) {
+            error = 'Please enter InvesterID. !!';
+            return error;
+        }
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+</script>
+

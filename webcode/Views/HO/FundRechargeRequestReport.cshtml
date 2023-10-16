@@ -1,0 +1,85 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+  Layout = "~/Views/Shared/_HOLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">Fund Recharge Request Report</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="cm-table-data">
+        <div class="cm-table-data-in">
+          @*<div class="cm-tbl-header">
+                <div class="cm-data-searchDate">
+                    <div class="date-filet">
+                        <div id="reportrange" class="cm-date-picker">
+                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                            <span></span> <b class="fa fa-caret-down"></b>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+          <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Investor Id</th>
+                <th>Request Date</th>
+                <th>Reference no.</th>
+                <th>Dhanu amt.</th>
+                <th>USDT amt.</th>
+                <th>TP USDT amt.</th>
+                <th>Receipt</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              @{
+                var i = 0;
+                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                {
+                  i++;
+                  <tr>
+                    <td>@i</td>
+                    <td><span>@dr["LoginId"].ToString()</span><span>@dr["Fullname"].ToString()</span></td>
+                    <td><p>@dr["Requestdate"].ToString()</p></td>
+                    <td><p>@dr["TrReferenceno"].ToString()</p></td>
+                    <td><p>$ @dr["DhanuAmount"].ToString()</p></td>
+                    <td><p>$ @dr["UsdtAmount"].ToString()</p></td>
+                    <td><p>$ @dr["TpUsdtAmount"].ToString()</p></td>
+                    <td><p>@dr["ReceiptUrl"].ToString()</p></td>
+                    <td><p>@dr["Status"].ToString()</p></td>
+                    <td>
+                      <p>
+                        @if (@dr["StatusId"].ToString() == "0")
+                        {
+                          <a href="~/Ho/WalletRecharge/@dr["RequestId"].ToString()">Edit</a>
+                        }
+
+                      </p>
+                    </td>
+                  </tr>
+                }
+              }
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+

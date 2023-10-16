@@ -1,0 +1,721 @@
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.json
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.exe
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\ref\webcode.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.xml
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+D:\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.json
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.exe
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\ref\webcode.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.xml
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawRegistration.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawSuccessfully.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\OpenLuckyDraw.cshtml.g.cs
+D:\BAAP NETWORK\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\PlayLuckyDraw.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.json
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.exe
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\ref\webcode.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.xml
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawRegistration.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawSuccessfully.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\OpenLuckyDraw.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\PlayLuckyDraw.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestmentTradingPool.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRequest.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRegistration.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolReceivedRequestList.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolSentRequestList.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ProcessTradingPoolRequest.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ManageSecurityPin.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\PinAuthentication.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolCommunityReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolDirectReferralReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolInvestmentReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolLevelIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRewardIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRoiIncomeReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolWalletReport.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Invester.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Profile.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\AddFundInWallet.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DeductFundFromWallet.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtTransfer.cshtml.g.cs
+C:\old pc\Codetrex\Codetrex\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SendBulkEmail.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.json
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.exe
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\ref\webcode.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.xml
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawRegistration.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawSuccessfully.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\OpenLuckyDraw.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\PlayLuckyDraw.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SendBulkEmail.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\AddFundInWallet.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DeductFundFromWallet.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Invester.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Profile.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ManageSecurityPin.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestmentTradingPool.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\PinAuthentication.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ProcessTradingPoolRequest.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolCommunityReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolDirectReferralReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolInvestmentReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolLevelIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolReceivedRequestList.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRegistration.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRequest.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRewardIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRoiIncomeReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolSentRequestList.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolWalletReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtTransfer.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+D:\Codetgex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\appsettings.json
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.exe
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\ref\webcode.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.xml
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawRegistration.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawSuccessfully.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\OpenLuckyDraw.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\PlayLuckyDraw.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SendBulkEmail.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\AddFundInWallet.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DeductFundFromWallet.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Invester.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Profile.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ManageSecurityPin.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestmentTradingPool.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\PinAuthentication.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ProcessTradingPoolRequest.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolCommunityReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolDirectReferralReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolInvestmentReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolLevelIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolReceivedRequestList.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRegistration.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRequest.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRewardIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRoiIncomeReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolSentRequestList.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolWalletReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtTransfer.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+D:\Codetrex\project\mlm\Baap Network\BAAP\Application Code\WEB Code\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\appsettings.Development.json
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\appsettings.json
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.StaticWebAssets.xml
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.exe
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.deps.json
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.json
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.runtimeconfig.dev.json
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.pdb
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.Views.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\webcode.Views.pdb
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\RestSharp.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.csproj.AssemblyReference.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfoInputs.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.AssemblyInfo.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CoreCompileInputs.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.MvcApplicationPartsAssemblyInfo.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.RazorAssemblyInfo.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\scopedcss\bundle\webcode.styles.css
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Manifest.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\webcode.StaticWebAssets.Pack.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\msbuild.webcode.Microsoft.AspNetCore.StaticWebAssets.props
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\msbuild.build.webcode.props
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.webcode.props
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.webcode.props
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.input.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.TagHelpers.output.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.RazorCoreGenerate.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent1.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\BlogContent2.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Disclaimer.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\EmailVerification.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\ForgetPassword.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawRegistration.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\LuckyDrawSuccessfully.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\OpenLuckyDraw.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\PlayLuckyDraw.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Registration.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SendBulkEmail.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\SuccessRegistration.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Home\Terms.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\AddFundInWallet.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\BaapNetworkDhanuReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DeductFundFromWallet.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\DhanuNetworkDhanuReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackGoldCoinAcheiver.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FasttrackSilverCoinAcheiver.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundApprovalReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\FundRechargeRequestReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Index.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Invester.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Login.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Logout.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\Profile.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\RewardReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\SuccessFormPost.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\UpdateCoinRate.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WalletRecharge.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestList.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\HO\WithdrawalRequestProcess.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\BonusIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ChangePassword.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DhanuWalletReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\DirectReferralReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\FundRechargeRequestReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\GetDhanuCoinReportFromDhanuNetwork.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentCryptoDepositReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\InvestmentReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\LevelIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ManageSecurityPin.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MatrixTree.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestment.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\MemberInvestmentTradingPool.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\OtpAuthentication.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\PinAuthentication.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\ProcessTradingPoolRequest.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\Profile.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RewardReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\RoiIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\SuccessFormPost.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TeamReferralReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolCommunityReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolDirectReferralReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolInvestmentReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolLevelIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolReceivedRequestList.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRegistration.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRequest.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRewardIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolRoiIncomeReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolSentRequestList.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\TradingPoolWalletReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtTransfer.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\UsdtWalletReport.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletRecharge.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WalletTransfer.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalEligible.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequest.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Member\WithdrawalRequestList.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_HOLayout.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_MemberLayout.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.RazorTargetAssemblyInfo.cs
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.Views.pdb
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.csproj.CopyComplete
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\refint\webcode.dll
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.pdb
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\webcode.genruntimeconfig.cache
+D:\codetrx-Laptop\CodeTrex\Projects\new-project\webcode\webcode\obj\Debug\net5.0\ref\webcode.dll

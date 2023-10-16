@@ -1,0 +1,116 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Asset Analysis People Network" />
+    <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="~/assets_ho/css/bootstrap-grid.min.css">
+    <link href="~/assets_ho/css/icons.css" rel="stylesheet">
+    <link href="~/assets_ho/css/custom.css" rel="stylesheet">
+
+</head>
+<body class="cm-dark-bg1">
+    <section class="section-spacing login-page">
+        <div class="cm-container">
+            <div class="cm-bg-images">
+                <div class="login-wrapper">
+                    <div class="login-wrapper-in">
+                        <div class="login-form-area">
+                            <div class="login-form">
+                                @using (Html.BeginForm())
+                                {
+                                    <div class="form-main">
+                                        <div class="login-form-title">SignIn</div>
+                                        <div class="login-intup">
+                                            <span><i class="fa fa-user"></i>User name</span>
+                                            <input type="text" name="username" id="username" class="login-inp">
+                                        </div>
+                                        <div class="login-intup">
+                                            <span><i class="fa fa-lock"></i>Password</span>
+                                            <input type="password" name="password" id="password" class="login-inp">
+                                        </div>
+                                        <div class="login-btn-login">
+                                            @{
+                                                string err = "";
+                                                if (ViewData["_ErrorMessage"] != null)
+                                                {
+                                                    err = ViewData["_ErrorMessage"].ToString();
+                                                }
+                                            }
+                                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                                            <button class="btn-login" id="btnLogin">SignIn</button>
+                                        </div>
+                                    </div>
+                                    @*<div class="other-login">Don't have an account? <a href="~/register">Sign up</a></div>*@
+                                }
+                            </div>
+                        </div>
+                        <div class="login-logo-area">
+                            <div class="login-logo-inner">
+                                <div class="login-logo">
+                                    <img src="~/assets_ho/images/logo.png" alt="logo">
+                                </div>
+                                <div class="logo-bottom-content">
+                                    <p>The Best Crypto Broking App</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script src="~/assets_ho/js/jquery.min.js"></script>
+    <script src="~/assets_ho/js/custom.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#btnLogin').click(function () {
+                var err = ValidateForm();
+                if (err != '') {
+                    $('#lblerr').text(err);
+                    return false;
+                }
+                return true;
+            });
+        });
+
+        function ValidateForm() {
+
+            var error = '';
+            if (!InputMandatory("username")) {
+                error = 'Please enter username. !!';
+                return error;
+            }
+
+            if (!InputMandatory("password")) {
+                error = 'Please enter password. !!';
+                return error;
+            }
+            return error;
+        }
+
+        function InputMandatory(name) {
+            var val = $('#' + name + '').val();
+            if (val == '') {
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,224 @@
+﻿
+@{
+  Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">Manage Security Pin</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="prasonal-dd shadow-custom">
+        @using (Html.BeginForm())
+        {
+          if (ViewData["SecurityPinStatus"] != null)
+          {
+            if (ViewData["SecurityPinStatus"] == "generate")
+            {
+              <div id="divGenerate" class="prasonal-form">
+                <div class="pre-title-ue">Generate Security Pin</div>
+                <div class="form-main">
+                  <div class="login-intup col-ff5">
+                    <span>Enter Security Pin</span>
+                    <input type="text" name="pin" id="pin" class="login-inp">
+                  </div>
+                  <div class="login-intup col-ff5">
+                    &nbsp;
+                  </div>
+                  <div class="login-intup col-ff5">
+                    <span>Confirm Security Pin</span>
+                    <input type="password" name="cpin" id="cpin" class="login-inp">
+                  </div>
+                  <div class="login-intup col-ff5">
+                    &nbsp;
+                  </div>
+
+
+                </div>
+                <div class="submit-btn-wrap">
+                  @{
+                    string err = "";
+                    string suc = "";
+                    if (ViewData["_ErrorMessage"] != null)
+                    {
+                      err = ViewData["_ErrorMessage"].ToString();
+                    }
+
+                    if (ViewData["_SuccessMessage"] != null)
+                    {
+                      suc = ViewData["_SuccessMessage"].ToString();
+                    }
+                  }
+                  <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsuc" style="color:#eae73f">@suc</label><br />
+                  <button type="submit" class="admin-btn" id="btnSubmit" name="submit" value="generate">Generate Security Pin</button>
+                </div>
+              </div>
+            }
+            else
+            {
+              <div id="divChange" class="prasonal-form">
+                <div class="pre-title-ue">Change Security Pin</div>
+                <div class="form-main">
+                  <div class="login-intup col-ff5">
+                    <span>Old Security Pin</span>
+                    <input type="password" name="oldpin" id="oldpin" class="login-inp">
+                  </div>
+                  <div class="login-intup col-ff5">
+                    &nbsp;
+                  </div>
+                  <div class="login-intup col-ff5">
+                    <span>New Security Pin</span>
+                    <input type="password" name="newpin" id="newpin" class="login-inp">
+                  </div>
+                  <div class="login-intup col-ff5">
+                    &nbsp;
+                  </div>
+                  <div class="login-intup col-ff5">
+                    <span>Confirm Security Pin</span>
+                    <input type="password" name="confirmnewpin" id="confirmnewpin" class="login-inp">
+                  </div>
+                  <div class="login-intup col-ff5">
+                    &nbsp;
+                  </div>
+
+
+                </div>
+                <div class="submit-btn-wrap">
+                  @{
+                    string err2 = "";
+                    string suc2 = "";
+                    if (ViewData["_ErrorMessage"] != null)
+                    {
+                      err2 = ViewData["_ErrorMessage"].ToString();
+                    }
+
+                    if (ViewData["_SuccessMessage"] != null)
+                    {
+                      suc2 = ViewData["_SuccessMessage"].ToString();
+                    }
+                  }
+                  <label id="lblerr2" style="color:#cb0f0f">@err2</label><label id="lblsuc2" style="color:#eae73f">@suc2</label><br />
+                  <button type="submit" class="admin-btn" id="btnSubmit2" name="submit" value="change">Change Security Pin</button>
+                  <br /><br />OR<br /><br />
+                  <button type="submit" class="admin-btn" id="btnSubmit3" name="submit" value="forgot">Forgot Security Pin</button>
+                </div>
+              </div>
+            }
+          }
+
+
+
+        }
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+
+    $('#btnSubmit').click(function () {
+      var err = ValidateForm();
+      if (err != '') {
+        $('#lblerr').text(err);
+        return false;
+      }
+      return true;
+    });
+
+    $('#btnSubmit2').click(function () {
+      var err = ValidateForm2();
+      if (err != '') {
+        $('#lblerr2').text(err);
+        return false;
+      }
+      return true;
+    });
+  });
+
+  function ValidateForm() {
+
+    var error = '';
+    if (!InputMandatory("pin")) {
+      error = 'Please enter security pin. !!';
+      return error;
+    }
+
+    if (!InputMandatory("cpin")) {
+      error = 'Please enter confirm security pin. !!';
+      return error;
+    }
+
+    if ($('#pin').val().length != 6) {
+      error = 'Please enter 6 digit security pin. !!';
+      return error;
+    }
+
+    if ($('#pin').val().trim() != $('#cpin').val().trim()) {
+      error = 'Entered pin and confirm pin did not match. !!';
+      return error;
+    }
+    return error;
+  }
+
+  function ValidateForm2() {
+
+    var error = '';
+    if (!InputMandatory("oldpin")) {
+      error = 'Please enter old security pin. !!';
+      return error;
+    }
+
+    if (!InputMandatory("newpin")) {
+      error = 'Please enter new security pin. !!';
+      return error;
+    }
+
+    if ($('#newpin').val().length != 6) {
+      error = 'Please enter 6 digit new security pin. !!';
+      return error;
+    }
+
+    if (!InputMandatory("confirmnewpin")) {
+      error = 'Please confirm new security pin. !!';
+      return error;
+    }
+
+    if ($('#newpin').val().trim() != $('#confirmnewpin').val().trim()) {
+      error = 'Entered pin and confirm pin did not match. !!';
+      return error;
+    }
+    return error;
+  }
+  function InputMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == '') {
+      return false;
+    }
+    return true;
+  }
+
+  function InputAmountValidate(name) {
+    var val = $('#' + name + '').val();
+    if (parseFloat(val) <= 0) {
+      return false;
+    }
+    return true;
+  }
+
+  function SelectMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == 0) {
+      return false;
+    }
+    return true;
+  }
+</script>

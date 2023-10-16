@@ -1,0 +1,249 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+
+    var _profile = ViewData["_Profiledetails"] as DataTable;
+}
+
+<div class="dashboard-center">
+    <div class="custom-breadcrumb">
+        <ol class="cd-breadcrumb">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#0">Profile</a></li>
+        </ol>
+    </div>
+    @using (Html.BeginForm())
+    {
+        <div class="dashboard-center-itm">
+
+            <div class="prasonal-dd shadow-custom">
+
+                <div class="prasonal-form">
+                    <div class="pre-title-ue">Personal Info</div>
+                    <div class="form-main">
+                        <div class="login-intup col-ff5">
+                            <span>First Name</span>
+                            <input type="text" name="firstname" id="firstname" value="@_profile.Rows[0]["Firstname"]" class="login-inp" readonly>
+                        </div>
+                        <div class="login-intup col-ff5">
+                            <span>Last Name</span>
+                            <input type="text" name="lastname" id="lastname" value="@_profile.Rows[0]["Lastname"]" class="login-inp" readonly>
+                        </div>
+                        <div class="login-intup col-ff5">
+                            <span>Email</span>
+                            <input type="text" name="email" id="email" value="@_profile.Rows[0]["Email"]" class="login-inp">
+                        </div>
+                        <div class="login-intup col-ff5" style="display:none;">
+                            <span>Date of Birth</span>
+                            <input type="date" name="dob" id="dob" value="@_profile.Rows[0]["Dateofbirth"]" class="login-inp">
+                        </div>
+                        <div class="login-intup col-ff5">
+                            <span>Contact No</span>
+                            <input type="text" name="mobile" id="mobile" value="@_profile.Rows[0]["Mobile"]" class="login-inp" readonly>
+                        </div>
+                        <div class="login-intup col-ff5">
+                            <div class="custom-select">
+                                <span>Gender</span>
+                                <select id="gender" name="gender">
+                                    <option value="0">Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="login-intup col-ff5">
+                            <div class="edit-p-detail"><button type="submit" class="admin-btn" id="btnSubmit" name="submit">Update</button></div>
+                            <br />
+                            @{
+                                string err = "";
+                                if (ViewData["_ErrorMessage"] != null)
+                                {
+                                    err = ViewData["_ErrorMessage"].ToString();
+                                }
+                            }
+                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-center-itm" style="display:none;">
+            <div class="col6-form">
+                <div class="form-col-w col-ff5">
+                    <div class="prasonal-dd shadow-custom">
+                        <div class="prasonal-form">
+                            <div class="pre-title-ue">Nominee Info</div>
+                            <div class="form-main">
+                                <div class="login-intup col-ff">
+                                    <span>Name</span>
+                                    <input type="text" name="nomineename" id="nomineename" value="@_profile.Rows[0]["Nomineename"]" class="login-inp">
+                                </div>
+                                <div class="login-intup col-ff">
+                                    <span>Relation</span>
+                                    <input type="text" name="nomineerelation" id="nomineerelation" value="@_profile.Rows[0]["Nomineerelation"]" class="login-inp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-col-w col-ff5">
+                    <div class="prasonal-dd shadow-custom">
+                        <div class="prasonal-form">
+                            <div class="pre-title-ue">Sponsor Info</div>
+                            <div class="form-main">
+                                <div class="login-intup col-ff">
+                                    <span>Sponsor Name</span>
+                                    <input type="text" name="sponsorname" id="sponsorname" value="@_profile.Rows[0]["Sponsorname"]" class="login-inp" readonly>
+                                </div>
+                                <div class="login-intup col-ff">
+                                    <span>Sponsor ID</span>
+                                    <input type="text" name="sponsorid" id="sponsorid" value="@_profile.Rows[0]["SponsorId"]" class="login-inp" readonly>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dashboard-center-itm" style="display:none;">
+            <div class="prasonal-dd shadow-custom">
+
+                <div class="prasonal-form">
+                    <div class="pre-title-ue">Address</div>
+                    <div class="form-main">
+                        <div class="login-intup has-multiple col-ff5">
+                            <div class="login-intup-inner">
+                                <span>Address Info</span>
+                                <textarea class="login-inp text-area" name="address" id="address">@_profile.Rows[0]["Address"]</textarea>
+                            </div>
+                            <div class="login-intup-inner">
+                                <div class="custom-select">
+                                    <span>Country</span>
+                                    <select id="country" name="country">
+                                        <option value="0">--Select--</option>
+                                        @foreach (DataRow dr in (ViewData["_country"] as DataTable).Rows)
+                                        {
+                                            <option value="@dr["cid"].ToString()">@dr["Countryname"].ToString()</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-intup has-multiple col-ff5">
+                            <div class="login-intup-inner">
+                                <span>State Name</span>
+                                <input type="text" name="statename" id="statename" value="@_profile.Rows[0]["Statename"]" class="login-inp">
+                            </div>
+                            <div class="login-intup-inner has-select">
+                                <span>City Name</span>
+                                <input type="text" name="cityname" id="cityname" value="@_profile.Rows[0]["Cityname"]" class="login-inp">
+                            </div>
+                            <div class="login-intup-inner">
+                                <span>Pin Code</span>
+                                <input type="text" name="pincode" id="pincode" value="@_profile.Rows[0]["Pincode"]" class="login-inp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+
+                <div class="prasonal-form">
+                    <div class="pre-title-ue">KYC Info</div>
+                    <div class="form-main">
+                        <div class="login-intup has-multiple col-ff">
+                            <div class="pre-title-ue">Coming Soon. !</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="Hf_Gender" value="@_profile.Rows[0]["Gender"]" />
+        <input type="hidden" id="Hf_Country" value="@_profile.Rows[0]["Countryid"]" />
+    }
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var Gender = $('#Hf_Gender').val();
+        var CountryId = $('#Hf_Country').val();
+
+        $('#gender').val(Gender);
+        $('#country').val(CountryId);
+
+
+        $('#btnSubmit').click(function () {
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                return false;
+            }
+            return true;
+        });
+    });
+
+
+
+    function ValidateForm() {
+
+        var error = '';
+        if (!InputMandatory("fname")) {
+            error = 'Please enter first name. !!';
+            return error;
+        }
+
+        if (!InputMandatory("email")) {
+            error = 'Please enter email id. !!';
+            return error;
+        }
+
+        if (!InputEmailValidate("email")) {
+            error = 'Please enter valid email id. !!';
+            return error;
+        }
+
+        if (!InputMandatory("mobile")) {
+            error = 'Please enter mobile no. !!';
+            return error;
+        }
+
+        if (!InputMobileValidate("mobile")) {
+            error = 'Please enter valid mobile no. !!';
+            return error;
+        }
+
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputEmailValidate(name) {
+        var val = $('#' + name + '').val();
+        var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test(val);
+    }
+
+    function InputMobileValidate(name) {
+        var val = $('#' + name + '').val();
+        var len = val.length;
+        if (len != 10) {
+            return false;
+        }
+        return true;
+    }
+</script>

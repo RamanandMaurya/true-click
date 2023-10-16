@@ -1,0 +1,65 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+  Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">Trading Pool Received Requests</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="cm-table-data">
+        <div class="cm-table-data-in">
+
+          <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Sponsor ID</th>
+                <th>Sponsor Name</th>
+                <th>Request Date</th>
+                <th>Request Status</th>
+                <th>Process</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              @{
+                var i = 0;
+                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                {
+                  i++;
+                  <tr>
+                    <th>@i</th>
+                    <td><p>@dr["LoginId"].ToString()</p></td>
+                    <td><p>@dr["Fname"].ToString()</p></td>
+                    <td><p>@dr["requestdate"].ToString()</p></td>
+                    <td><p>@dr["requeststatus"].ToString()</p></td>
+                    <td>
+                      @if (dr["requestid"].ToString() == "Pending")
+                      {
+                        <a href="~/Member/ProcessTradingPoolRequest/@dr["requestid"].ToString()/1">Approve</a> <span>|</span> <a href="~/Member/ProcessTradingPoolRequest/@dr["requestid"].ToString()/2">Reject</a> 
+                      }
+
+                    </td>
+                  </tr>
+                }
+              }
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>

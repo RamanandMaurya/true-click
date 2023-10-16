@@ -1,0 +1,139 @@
+﻿@{
+  Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+  <div class="dashboard-center">
+    <div class="custom-breadcrumb">
+      <ol class="cd-breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#0">Add Trading Pool Member</a></li>
+      </ol>
+    </div>
+    <div class="dashboard-center-itm">
+      <div class="prasonal-dd shadow-custom">
+        @using (Html.BeginForm())
+        {
+        <div class="prasonal-form">
+          <div class="pre-title-ue">Send Request To Add In Trading Pool</div>
+          <div class="form-main">
+            <div class="login-intup col-ff5">
+              <span>Invester Id</span>
+              <input type="text" name="investorloginid" id="investorloginid" class="login-inp">
+            </div>
+            <div class="login-intup col-ff5">
+              <span>Invester Name</span>
+              <input type="text" name="investorname" id="investorname" class="login-inp" readonly>
+            </div>
+
+          </div>
+          <div class="submit-btn-wrap text-align-left">
+            @{
+              string err = "";
+              string suc = "";
+              if (ViewData["_ErrorMessage"] != null)
+              {
+                err = ViewData["_ErrorMessage"].ToString();
+              }
+
+              if (ViewData["_SuccessMessage"] != null)
+              {
+                suc = ViewData["_SuccessMessage"].ToString();
+              }
+            }
+            <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsuc" style="color:#eae73f">@suc</label><br />
+            <button type="submit" class="admin-btn" id="btnSubmit" name="btnSubmit">Send Request</button>
+          </div>
+        </div>
+
+        }
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $(document).ready(function () {
+
+    $('#btnSubmit').hide();
+
+    $('#investorloginid').on('change', function () {
+
+      GetReferralInfo();
+      return false;
+    });
+
+    $('#btnSubmit').click(function () {
+
+      $("#btnSubmit").hide();
+
+      var err = '';
+      if (err != '') {
+        $('#lblerr').text(err);
+        $("#btnSubmit").show();
+        return false;
+      }
+      return true;
+    });
+  });
+
+
+  function ValidateForm() {
+
+    var error = '';
+
+    if (!InputMandatory("investorloginid")) {
+      error = 'Please enter Invester id. !!';
+      return error;
+    }
+
+    return error;
+  }
+
+  function GetReferralInfo() {
+
+        var LoginId = $('#investorloginid').val();
+
+         $.ajax({
+            url: '@Url.Action("GetMemberDetails", "Home")',
+            type: 'GET',
+             data: { LoginId: LoginId },
+            dataType: 'json',
+             success: function (data) {
+               var arr = data.split('$');
+               $('#investorname').val(arr[1]);
+               $('#btnSubmit').show();
+                 return false;
+            }
+        });
+    }
+
+  function InputMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == '') {
+      return false;
+    }
+    return true;
+  }
+
+  function InputAmountValidate(name) {
+    var val = $('#' + name + '').val();
+    if (parseFloat(val) <= 0) {
+      return false;
+    }
+    return true;
+  }
+
+  function SelectMandatory(name) {
+    var val = $('#' + name + '').val();
+    if (val == 0) {
+      return false;
+    }
+    return true;
+  }
+</script>

@@ -1,0 +1,137 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Direct Referral Report</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="cm-tbl-header ">
+                            <div class="cm-data-searchDate selectMainItem">
+                                <div class="select_title">Registration Date Range</div>
+                                <div class="date-filet">
+                                    <div id="reportrange" class="cm-date-picker">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="fa fa-caret-down"></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selectMainItem">
+                                <div class="select_title">Rank</div>
+                                <select class="selectssMain" id="ddlRank" name="ddlRank">
+                                    <option value="-1">ALL</option>
+                                    @foreach (DataRow dr in (ViewData["_rank"] as DataTable).Rows)
+                                    {
+                                        <option value="@dr["rlevel"].ToString()">@dr["designation"].ToString()</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="filterBtnMainWrap selectMainItem">
+                                <button id="btnSearch" class="filterBtnMain">Search</button>
+                                <input type="hidden" id="HF_Startdate" name="HF_Startdate" value="" />
+                                <input type="hidden" id="HF_Enddate" name="HF_Enddate" value="" />
+                                <input type="hidden" id="HF_RankName" name="HF_RankName" value="" />
+                            </div>
+
+                            @if (ViewData["FilterBasedOn"] != null)
+                            {
+                                <div class="allfiltermain">
+
+                                    @Html.Raw(@ViewData["FilterBasedOn"])
+                                </div>
+                            }
+
+                        </div>
+                    }
+
+
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Investor Id</th>
+                                <th>Investor Name</th>
+                                <th>Registration Date</th>
+                                <th>Activation Date</th>
+                                <th>Mobile no</th>
+                                <th>Status</th>
+                                <th>Investment amt.</th>
+                                @*<th>Password</th>*@
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @{
+                                var i = 0;
+                                foreach (DataRow dr in (ViewData["_report"] as DataTable).Rows)
+                                {
+                                    i++;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td><p>@dr["LoginId"].ToString()</p></td>
+                                        <td><span>@dr["Fullname"].ToString()</span><span>Designation - @dr["Rank"].ToString()</span></td>
+                                        <td><p>@dr["RegistrationDate"].ToString()</p></td>
+                                        <td><p>@dr["ActivationDate"].ToString()</p></td>
+                                        <td><p>@dr["Mobileno"].ToString()</p></td>
+                                        <td><p>@dr["Status"].ToString()</p></td>
+                                        <td data-dolor="$">@dr["Investment"].ToString()</td>
+                                        @*<td><label title="@dr["Password"].ToString()">@dr["Password"].ToString()</label></td>*@
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>Totals</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td data-dolor="$"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+
+
+        $('#btnSearch').click(function () {
+            var Startdate = $('#reportrange').data('daterangepicker').startDate.format('MM/DD/YYYY');
+            var Enddate = $('#reportrange').data('daterangepicker').endDate.format('MM/DD/YYYY');
+
+            $('#HF_Startdate').val(Startdate);
+            $('#HF_Enddate').val(Enddate);
+
+            if ($('#ddlRank').val() > 0)
+                $('#HF_RankName').val($('#ddlRank option:selected').text());
+
+            return true;
+        });
+    });
+
+</script>

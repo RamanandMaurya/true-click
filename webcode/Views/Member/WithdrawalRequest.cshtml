@@ -1,0 +1,534 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Withdrawal Request</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="prasonal-dd shadow-custom">
+                @using (Html.BeginForm())
+                {
+
+
+                    <div class="prasonal-form">
+                        <div class="pre-title-ue">Withdrawal Request</div>
+                        <div class="fundFormWrap">
+                            @{
+                                if (ViewData["wallettype"] != null)
+                                {
+                                    if (ViewData["wallettype"].ToString() == "1")
+                                    {
+                                        <div class="fundType">
+                                            <div class="fundDesign dhanuFund"><img src="/assets_backend/images/dhanu1.png" alt="logo"> Dhanu</div>
+                                        </div>
+                                    }
+                                    else if (ViewData["wallettype"].ToString() == "2")
+                                    {
+                                        <div class="fundType">
+                                            <div class="fundDesign usdtFund"><img src="/assets_backend/images/usdt.png" alt="logo"> USDT</div>
+                                        </div>
+                                    }
+                                }
+                            }
+
+
+                            <div class="prasonal-form">
+                                <div class="form-main">
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Withdrawal eligible coin</span>
+                                        <label>@ViewData["withdrawalBalance"]</label>
+                                    </div>
+                                    <div class="login-intup col-ff5 widtdroll">
+                                        <span>Minimum withdrawal coin</span>
+                                        <label>$ @ViewData["MinimumWithdrawAmount"]</label> (<label id="lblminimumCoin"></label>)
+                                    </div>
+                                    <div class="login-intup col-ff-maxL">
+                                        <div class="all-lbl">Request Withdrawal Coin(s)</div>
+                                        <div class="all-lbl-inp threeInp">
+                                            <div class="single-row-inp">
+                                                <span>Coins</span>
+                                                <input type="number" name="dhanucoin" id="dhanucoin" placeholder="Enter coin" class="login-inp color-yellow" autocomplete="off">
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount ($)</span>
+                                                <input type="text" name="dhanuamount" id="dhanuamount" value="" class="login-inp" disabled>
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount <label>(<img src="/assets_backend/images/rupees.png" alt="logo">)</label></span>
+                                                <input type="number" name="dhanucurrency" id="dhanucurrency" value="0" class="login-inp color-red" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="login-intup col-ff-maxL">
+                                        <div class="all-lbl">Platform Fees (5%)</div>
+                                        <div class="all-lbl-inp threeInp">
+                                            <div class="single-row-inp">
+                                                <span>Coins</span>
+                                                <input type="number" name="feescoin" id="feescoin" value="0" placeholder="Enter coin" class="login-inp color-yellow" autocomplete="off" disabled>
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount ($)</span>
+                                                <input type="text" name="feesamount" id="feesamount" value="" class="login-inp" disabled>
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount <label>(<img src="/assets_backend/images/rupees.png" alt="logo">)</label></span>
+                                                <input type="number" name="feescurrency" id="feescurrency" value="0" class="login-inp color-red" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="login-intup col-ff-maxL">
+                                        <div class="all-lbl">Final Withdrawal Coin(s)</div>
+                                        <div class="all-lbl-inp threeInp">
+                                            <div class="single-row-inp">
+                                                <span>Coins</span>
+                                                <input type="number" name="finalcoin" id="finalcoin" value="0" placeholder="Enter coin" class="login-inp color-yellow" autocomplete="off" disabled>
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount ($)</span>
+                                                <input type="text" name="finalamount" id="finalamount" value="" class="login-inp" disabled>
+                                            </div>
+                                            <div class="single-row-inp">
+                                                <span>Amount <label>(<img src="/assets_backend/images/rupees.png" alt="logo">)</label></span>
+                                                <input type="number" name="finalcurrency" id="finalcurrency" value="0" class="login-inp color-red" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="login-intup col-ff5" style="display:none;">
+                                        <span>Withdrawal amount ($)</span>
+                                        <input type="number" name="amount" id="amount" placeholder="Enter amount" class="login-inp" autocomplete="off">
+                                    </div>
+                                    @*<div class="login-intup col-ff5">
+                                        &nbsp;
+                                    </div>*@
+                                    <div id="divPlatformFees" class="login-intup col-ff5 widtdroll" style="display:none;">
+                                        <span>Platform Fees</span>
+                                        <label id="lblPlatformfees">0</label>
+                                    </div>
+                                    <div id="divFinalAmount" class="login-intup col-ff5 widtdroll" style="display:none;">
+                                        <span>Final Withdrawal amount</span>
+                                        <label id="lblFinalamt">0</label>
+                                    </div>
+                                    <div class="login-intup col-ff5" style="display:none;">
+                                        <div class="custom-select">
+                                            <span>Deposit address</span>
+                                            <select id="ddlexchangeaddress" name="ddlexchangeaddress">
+                                                <option value="0">Choose Address</option>
+                                                @foreach (DataRow dr in (ViewData["AddressList"] as DataTable).Rows)
+                                                {
+                                                <option value="@dr["EAddressId"].ToString()">@dr["ExchangeName"].ToString() (@dr["DepositAddress"].ToString())</option>
+                                                }
+                                                <option value="-1">Add New Address</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    @*<div class="login-intup col-ff5">
+                                        &nbsp;
+                                    </div>*@
+                                    <div id="divExchangename" class="login-intup col-ff5" style="display:none;">
+                                        <div class="custom-select">
+                                            <span>Exchange</span>
+                                            <select id="ddlexchange" name="ddlexchange">
+                                                <option value="0">Choose Exchange</option>
+                                                <option value="1">DhanuX</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="divExchangeaddress" class="login-intup col-ff5" style="display:none;">
+                                        <span>Deposit address</span>
+                                        <input type="text" name="address" id="address" placeholder="Enter address" class="login-inp" autocomplete="off">
+                                    </div>
+
+                                    <div class="login-intup col-ff5">
+                                        <div class="all-lbl">Remark</div>
+                                        <textarea class="login-inp text-area" id="remark" name="remark"></textarea>
+                                    </div>
+                                    <div class="login-intup col-ff5">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="submit-btn">
+                                    @{
+                                        string err = "";
+                                        string suc = "";
+                                        if (ViewData["_ErrorMessage"] != null)
+                                        {
+                                            err = ViewData["_ErrorMessage"].ToString();
+                                        }
+
+                                        if (ViewData["_SuccessMessage"] != null)
+                                        {
+                                            suc = ViewData["_SuccessMessage"].ToString();
+                                        }
+                                    }
+                                    <label id="lblerr" style="color:#cb0f0f">@err</label><label id="lblsuc" style="color:#eae73f">@suc</label><br />
+                                    <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Save Request</button>
+                                </div>
+                                <div class="form_nots">
+                                    <p><strong>Note : </strong>Your coin transfer on your wallet address within 24 Hrs-72 Hrs.</p>
+                                    <p><strong>Note : </strong>Please confirm your deposit address. We are not liable to transfer on wrong submitted address.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="submit-btn-wrap text-align-left">
+
+                            @*<label id="lblerr" style="color:#cb0f0f">@err</label>*@<br />
+                            @*<button type="submit" class="admin-btn" id="btnSubmit" name="submit">Submit Request</button>*@
+                            <input type="hidden" name="withdrawalbalance" id="withdrawalbalance" value="@ViewData["withdrawalBalance"]">
+                            <input type="hidden" name="minwithdrawalamount" id="minwithdrawalamount" value="@ViewData["MinimumWithdrawAmount"]">
+                            <input type="hidden" name="handlingfees" id="handlingfees" value="@ViewData["HandlingFees"]" />
+                            <input type="hidden" name="dhanurate" id="dhanurate" value="@ViewData["_dhanucoinrate"]">
+                            <input type="hidden" name="currencyrate" id="currencyrate" value="@ViewData["_currencyrate"]" />
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        GetMinimumCoin();
+
+        $('#dhanuamount').on('change', function () {
+
+            if (!InputMandatory("dhanuamount")) {
+                $('#dhanuamount').val('0');
+                $('#dhanucoin').val('0');
+                //alert('Please enter recharge amount. !!');
+                //return false;
+            }
+
+            if (!InputAmountValidate("dhanuamount")) {
+                //alert('Please enter valid recharge amount. !!');
+                $('#dhanuamount').val('0');
+                $('#dhanucoin').val('0');
+                //return false;
+            }
+
+            DhanuCalc();
+            //TotalCalc();
+            return false;
+        });
+
+        $('#dhanucoin').on('change', function () {
+
+            $('#dhanuamount').val('0');
+            $('#feescoin').val('0');
+            $('#finalcoin').val('0');
+            $('#feesamount').val('0');
+            $('#finalamount').val('0');
+
+            if (!InputMandatory("dhanucoin")) {
+                $('#dhanucoin').val('0');
+                $('#dhanuamount').val('0');
+                //alert('Please enter recharge amount. !!');
+                //return false;
+            }
+
+            if (!InputAmountValidate("dhanucoin")) {
+                $('#dhanucoin').val('0');
+                $('#dhanuamount').val('0');
+                //alert('Please enter valid recharge amount. !!');
+                //return false;
+            }
+
+            DhanuCalc();
+
+            var fees = $('#handlingfees').val();
+            var coin = $('#dhanucoin').val();
+
+            var feesamount = 0;
+            var finalamount = 0;
+
+            feesamount = parseFloat(parseFloat(coin) * parseFloat(fees) / 100);
+            finalamount = parseFloat(parseFloat(coin) - parseFloat(feesamount));
+
+            $('#feescoin').val(feesamount);
+            $('#finalcoin').val(finalamount);
+
+            FeesCalc();
+            FinalCalc();
+
+            //TotalCalc();
+            return false;
+        });
+
+        $('#amount').change(function () {
+            
+            var amt = $('#amount').val();
+            var fees = $('#handlingfees').val();
+
+            var feesamount = 0;
+            var finalamount = 0;
+
+            if (parseFloat(amt) > 0) {
+                $('#divPlatformFees').show();
+                $('#divFinalAmount').show();
+
+                feesamount = parseFloat(parseFloat(amt) * parseFloat(fees) / 100);
+                finalamount = parseFloat(parseFloat(amt) - parseFloat(feesamount));
+
+                $('#lblPlatformfees').text('$ ' + parseFloat(feesamount).toFixed(4));
+                $('#lblFinalamt').text('$ ' + parseFloat(finalamount).toFixed(4));
+            }
+            else {
+
+                $('#lblPlatformfees').text('$ 0');
+                $('#lblFinalamt').text('$ 0');
+
+                $('#divPlatformFees').hide();
+                $('#divFinalAmount').hide();
+            }
+            return false;
+        });
+
+        $('#ddlexchangeaddress').change(function () {
+
+            var val = $('#ddlexchangeaddress').val();
+
+            if (val == -1) {
+                $('#divExchangename').show();
+                $('#divExchangeaddress').show();
+            }
+            else if (val == 0) {
+                $('#divExchangename').hide();
+                $('#divExchangeaddress').hide();
+            }
+            else {
+                $('#divExchangename').hide();
+                $('#divExchangeaddress').hide();
+            }
+            return false;
+        });
+
+        $('#btnSubmit').click(function () {
+
+            //$("#btnSubmit").attr("disabled", true);
+
+            var err = ValidateForm();
+            if (err != '') {
+                $('#lblerr').text(err);
+                //$("#btnSubmit").removeAttr("disabled");
+                return false;
+            }
+            return true;
+        });
+    });
+
+    function DhanuCalc() {
+
+        var _rate = $('#dhanurate').val();
+        var _amount = $('#dhanuamount').val();
+        var _coin = $('#dhanucoin').val();
+        var _currencyrate = $('#currencyrate').val();
+        var _currencyamount = 0;
+
+        if (_amount == '') {
+            _amount = 0;
+        }
+
+        if (_coin == '') {
+            _coin = 0;
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate)).toFixed(4);
+        }
+        else if (parseFloat(_coin) > 0) {
+
+            _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _currencyamount = parseFloat(parseFloat(_amount) * parseFloat(_currencyrate));
+        }
+
+        $('#dhanuamount').val(_amount);
+        $('#dhanucoin').val(_coin);
+        $('#dhanucurrency').val(_currencyamount);
+    }
+
+
+    function FeesCalc() {
+
+        var _rate = $('#dhanurate').val();
+        var _amount = $('#feesamount').val();
+        var _coin = $('#feescoin').val();
+        var _currencyrate = $('#currencyrate').val();
+        var _currencyamount = 0;
+
+        if (_amount == '') {
+            _amount = 0;
+        }
+
+        if (_coin == '') {
+            _coin = 0;
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate)).toFixed(4);
+        }
+        else if (parseFloat(_coin) > 0) {
+
+            _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _currencyamount = parseFloat(parseFloat(_amount) * parseFloat(_currencyrate));
+        }
+
+        $('#feesamount').val(_amount);
+        $('#feescoin').val(_coin);
+        $('#feescurrency').val(_currencyamount);
+    }
+
+
+    
+    function FinalCalc() {
+
+        var _rate = $('#dhanurate').val();
+        var _amount = $('#finalamount').val();
+        var _coin = $('#finalcoin').val();
+        var _currencyrate = $('#currencyrate').val();
+        var _currencyamount = 0;
+
+        if (_amount == '') {
+            _amount = 0;
+        }
+
+        if (_coin == '') {
+            _coin = 0;
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _coin = parseFloat(parseFloat(_amount) / parseFloat(_rate)).toFixed(4);
+        }
+        else if (parseFloat(_coin) > 0) {
+
+            _amount = parseFloat(parseFloat(_coin) * parseFloat(_rate));
+        }
+
+        if (parseFloat(_amount) > 0) {
+
+            _currencyamount = parseFloat(parseFloat(_amount) * parseFloat(_currencyrate));
+        }
+
+        $('#finalamount').val(_amount);
+        $('#finalcoin').val(_coin);
+        $('#finalcurrency').val(_currencyamount);
+    }
+
+    function GetMinimumCoin() {
+
+        var _rate = $('#dhanurate').val();
+        var minamount = $('#minwithdrawalamount').val();
+
+        var _minCoin = parseFloat(minamount) / parseFloat(_rate);
+
+        $('#lblminimumCoin').text(_minCoin.toFixed(4));
+    }
+
+    function ValidateForm() {
+
+        var error = '';
+
+        var balance = $('#withdrawalbalance').val();
+        var minamount = $('#minwithdrawalamount').val();
+
+        if (parseFloat(balance) <= 0) {
+
+            error = 'Withdrawal balance not available. You are not eligible for withdrawal request. !!';
+            return error;
+        }
+
+        //if (!SelectMandatory("ddlexchangeaddress")) {
+        //    error = 'Please choose deposit address. !!';
+        //    return error;
+        //}
+
+        if (!InputMandatory("dhanucoin")) {
+            error = 'Please enter withdrawal coin. !!';
+            return error;
+        }
+
+        if (!InputAmountValidate("amount")) {
+            error = 'Please enter valid withdrawal coin. !!';
+            return error;
+        }
+
+        if (parseFloat(balance) < parseFloat($('#dhanuamount').val())) {
+
+            error = 'Withdraw amount should be less than balance amount. !!';
+            return error;
+        }
+
+        if (parseFloat(minamount) > parseFloat($('#dhanuamount').val())) {
+
+            error = 'Withdraw amount should be greater than minimum withdrawable amount. !!';
+            return error;
+        }
+
+        //if ($('#ddlexchangeaddress').val() == -1) {
+
+        //    if (!SelectMandatory("ddlexchange")) {
+        //        error = 'Please choose exchange. !!';
+        //        return error;
+        //    }
+
+        //    if (!InputMandatory("address")) {
+        //        error = 'Please enter deposit address. !!';
+        //        return error;
+        //    }
+        //}
+        
+        return error;
+    }
+
+    function InputMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == '') {
+            return false;
+        }
+        return true;
+    }
+
+    function InputAmountValidate(name) {
+        var val = $('#' + name + '').val();
+        if (parseFloat(val) <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function SelectMandatory(name) {
+        var val = $('#' + name + '').val();
+        if (val == 0) {
+            return false;
+        }
+        return true;
+    }
+</script>
