@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4up1w7W2hmm/Z9glBDzgSD6LxDNZT7VYsHKukGv7l9pAdPsPeRKhm9V5E5HJPUvXzcaVCCNCA/R/jg6Aj67l1Q==",
+  "dgSpecHash": "w/ZA7qAy1rbnq+nrT2HtIIa6D8RBieC4QTKyPgGqdgutYRDSw2DsdU25di7cTA5ruAILw2YNT5T9zDm2PIIqVQ==",
   "success": true,
-  "projectFilePath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\new-project\\webcode\\webcode\\webcode.csproj",
+  "projectFilePath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\ture-click\\webcode\\webcode\\webcode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

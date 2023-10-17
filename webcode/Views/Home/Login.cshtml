@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Best Asset Analysis People Network" />
-    <title>BAAP</title>
-    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/favicon.png">
+    <title>True Click</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/favicon.svg">
     <link href="~/assets/css/icons.css" rel="stylesheet">
     <link href="~/assets/css/custom.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>
-    (function (w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -48,36 +48,40 @@
             <div class="cm-container">
                 <div class="cm-bg-images">
                     <div class="login-wrapper">
+                        <div class="mobile-logo">
+                            <a href="~/">
+                                <img src="~/assets/images/logo.svg" alt="logo">
+                            </a>
+                        </div>
                         <div class="login-wrapper-in">
-
                             <div class="login-form-area register-page">
                                 <div class="login-form">
                                     @using (Html.BeginForm())
                                     {
-                                    <div class="form-main">
-                                        <div class="login-form-title">SignIn</div>
-                                        <div class="login-intup">
-                                            <span><i class="fa fa-user"></i>User name</span>
-                                            <input type="text" name="username" id="username" class="login-inp">
-                                        </div>
-                                        <div class="login-intup">
-                                            <span><i class="fa fa-lock"></i>Password</span>
-                                            <input type="password" name="password" id="password" class="login-inp">
-                                        </div>
-                                        <div class="login-btn-login">
-                                            @{
+                                        <div class="form-main">
+                                            <div class="login-form-title">SignIn</div>
+                                            <div class="login-intup">
+                                                <span><i class="fa fa-user"></i>User name</span>
+                                                <input type="text" name="username" id="username" class="login-inp">
+                                            </div>
+                                            <div class="login-intup">
+                                                <span><i class="fa fa-lock"></i>Password</span>
+                                                <input type="password" name="password" id="password" class="login-inp">
+                                            </div>
+                                            <div class="login-btn-login">
+                                                @{
                                                     string err = "";
                                                     if (ViewData["_ErrorMessage"] != null)
                                                     {
                                                         err = ViewData["_ErrorMessage"].ToString();
                                                     }
-                                            }
-                                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
-                                            <button class="btn-login" id="btnLogin">SignIn</button>
+                                                }
+                                                <label id="lblerr" style="color:#cb0f0f">@err</label><br />
+                                                <button class="btn-login" id="btnLogin">SignIn</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="other-login">Don't have an account? <a href="~/register">Sign up</a></div>
-                                    <div class="other-login">Don't remember the password? <a href="~/forget-password">Forgot Password</a></div>
+                                        <div class="other-login">Don't have an account? <a href="~/register">Sign up</a></div>
+                                        <div class="other-login">Don't remember the password? <a href="~/forget-password">Forgot Password</a></div>
                                     }
                                 </div>
                             </div>
@@ -96,6 +100,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mobile-footer-image">
+                            <a href="~/">
+                                <img src="~/assets/images/social-media.png" alt="image-login">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +116,7 @@
 <script>
 
     $(document).ready(function () {
-        
+
         $('#btnLogin').click(function () {
             var err = ValidateForm();
             if (err != '') {
