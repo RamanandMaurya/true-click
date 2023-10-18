@@ -1467,11 +1467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\ture-click\\webcode\\webcode\\webcode.csproj",
+      "projectUniqueName": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\true-click\\webcode\\webcode\\webcode.csproj",
       "projectName": "webcode",
-      "projectPath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\ture-click\\webcode\\webcode\\webcode.csproj",
+      "projectPath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\true-click\\webcode\\webcode\\webcode.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\ture-click\\webcode\\webcode\\obj\\",
+      "outputPath": "D:\\codetrx-Laptop\\CodeTrex\\Projects\\true-click\\webcode\\webcode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
