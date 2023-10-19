@@ -1047,7 +1047,7 @@ h6 {
     font-weight: 700;
 }
 .plan-card .price-text span{
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 700;
 }
 .about-page-slider {
@@ -3490,7 +3490,9 @@ h6 {
     .success_name {
         font-size: 40px;
     }
-
+    .plan-card .price-text span {
+        font-size: 20px;
+    }
     .dol6-form-itm {
         width: 100%;
     }
