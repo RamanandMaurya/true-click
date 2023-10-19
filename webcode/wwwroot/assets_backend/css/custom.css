@@ -127,7 +127,7 @@ sup {
 }
 
 a {
-    color: #0052ce;
+    color: #147DF8;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -136,7 +136,7 @@ a {
 }
 
     a:hover {
-        color: #0052ce;
+        color: #147DF8;
         text-decoration: none;
     }
 
@@ -2043,6 +2043,7 @@ table#cmDataTable .dbColor td {
     background-color: #147DF8;
     cursor: pointer;
     outline: none;
+    transition:all .3s ease;
 }
 
 .prasonal-form .login-inp:-webkit-autofill,
@@ -2059,7 +2060,8 @@ table#cmDataTable .dbColor td {
 }
 
 .admin-btn:hover {
-    color: #147DF8;
+    color: #ffffff;
+    background-color: #126cd6;
 }
 
 .pre-title-ue {

@@ -756,6 +756,9 @@ h6 {
     font-weight: 700;
     margin-top: 0px;
     font-size: 55px;
+    background: linear-gradient(73deg, rgba(20,125,248,1) 0%, rgba(0,47,102,1) 55%, rgba(20,125,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
     .main-fomr-title h2 span, .main-fomr-title h1 span {
@@ -767,13 +770,16 @@ h6 {
 }
 
 .home-baner.about-banner {
-    background-image: url('../images/contact_us.png');
     padding-bottom: 70px;
 }
 
 .banner-contact-content h3 {
     text-transform: none;
     font-weight: 700;
+    background: linear-gradient(73deg, rgba(20,125,248,1) 0%, rgba(0,47,102,1) 55%, rgba(20,125,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top:0px;
 }
 
     .banner-contact-content h3 span {
@@ -782,39 +788,132 @@ h6 {
 
 .contact-page-form {
     padding-bottom: 90px;
-    background-image: url('../images/contact-body-bg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .banner-contact-content {
     max-width: 350px;
     padding-top: 25px;
 }
-
+    .banner-contact-content p {
+        color: #383838;
+        font-size: 16px;
+        font-weight: 600;
+    }
 .cm-form-control {
     display: block;
     width: 100%;
     padding: 9px 15px;
-    border: 1px solid #363434;
-    background-color: transparent;
-    color: #9f9f9f;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #383838;
     resize: none;
     border-radius: 7px;
     outline: none;
 }
 
+.plan-card {
+    box-shadow: 0px 0px 4px 0px #dddddd;
+    max-width: 300px;
+    padding: 20px 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    min-width: 212px;
+}
+
+.plan-inner {
+    padding: 0px 10px;
+    padding-bottom: 20px;
+}
+
+.plan-section-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+}
+.plan-card h3 {
+    color: #147df8;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.pt-0{
+    padding-top:0px !important;
+}
+.plan-card p {
+    color: #383838;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+    .plan-card p span {
+        color: #383838;
+        font-weight: 400;
+    }
+
+.plan-card a {
+    background-color: #e7f2fe;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #147df8;
+    margin: 15px 0px;
+    margin-top: 30px;
+    transition: all .3s ease;
+}
+
+    .plan-card a:hover {
+        background-color: #d4e5f7;
+    }
     .cm-form-control::-webkit-input-placeholder {
         color: #5c5c5c;
         opacity: 1;
     }
+.how-to-content-count.plan-table {
+    margin-bottom: 60px;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.about-padding-btm {
+    padding-bottom: 40px;
+}
+.responsive-table {
+    overflow-x: auto;
+}
 
+.table-custom {
+    width: 100%;
+    border-radius: 20px;
+}
+
+    .table-custom tr th {
+        padding: 10px;
+        color: #383838;
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px solid #dddddd;
+        white-space: nowrap;
+    }
+    .table-custom tr td {
+        color: #3c8ae3;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
 .cm-form-group label {
     display: block;
     width: 100%;
     font-size: 14px;
-    color: #A1803D;
+    color: #383838;
     font-weight: 500;
 }
 
@@ -847,7 +946,7 @@ h6 {
     width: 100%;
     padding: 13px 29px;
     outline: none;
-    background-color: #E4B247;
+    background-color: #147df8;
     box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.11), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     cursor: pointer;
@@ -870,17 +969,20 @@ h6 {
     left: 0px;
     height: 19px;
     width: 39px;
-    background-color: white;
+    background-color: #e1e1e1;
     border-radius: 100px;
     top: 2px;
+    transition: 0.3s;
 }
-
+.check-condition input:checked + label::after {
+    background-color: rgb(20 125 248 / 25%);
+}
 .switch-style {
     padding-left: 50px;
     position: relative;
     margin: 0px;
     font-size: 14px;
-    color: #A1803D;
+    color: #147df8;
     font-weight: 500;
     cursor: pointer;
 }
@@ -893,7 +995,7 @@ h6 {
     content: "";
     height: 15px;
     width: 15px;
-    background-color: #181818;
+    background-color: #666666;
     display: inline-block;
     border-radius: 50%;
     position: absolute;
@@ -906,7 +1008,7 @@ h6 {
 
 .check-condition input:checked + label:before {
     left: 21px;
-    background-color: #e4b247;
+    background-color: #147df8;
 }
 
 /* about page */
@@ -923,22 +1025,31 @@ h6 {
     font-size: 54px;
     font-weight: 700;
     margin-bottom: 22px;
+    background: linear-gradient(73deg, rgba(20,125,248,1) 0%, rgba(0,47,102,1) 55%, rgba(20,125,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
     .banner-contact-content h1 span {
         color: #E2B046;
     }
-
 .about-pigi p {
-    font-weight: 400;
-    color: #F5F5F5;
+    font-weight: 600;
+    color: #383838;
     line-height: 1.9;
 }
 
 .banner-img-on {
     text-align: center;
 }
-
+.plan-card .price-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+.plan-card .price-text span{
+    font-size: 24px;
+    font-weight: 700;
+}
 .about-page-slider {
     background-size: cover;
     background-repeat: no-repeat;
@@ -979,16 +1090,27 @@ h6 {
         }
 
 .partner-section {
-    background-color: #070D18;
+    background-color: transparent;
 }
-
+.section-spacing.stay-loop-wrap {
+    padding-bottom: 60px;
+}
 .partener-logo-content h2 {
     margin: 0px;
     text-transform: none;
     font-size: 35px;
     margin-bottom: 30px;
+    background: linear-gradient(73deg, rgba(20,125,248,1) 0%, rgba(0,47,102,1) 55%, rgba(20,125,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:600;
 }
-
+.partener-logo-content p {
+    color: #383838;
+    font-size: 16px;
+    font-weight: 600;
+    line-height:1.9;
+}
 .partener-logo-content {
     text-align: center;
     padding-top: 20px;
@@ -1014,33 +1136,37 @@ h6 {
         }
 
 .stey-loop {
-    background-color: #232323;
+    background-color: #ffffff;
     padding: 50px 50px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 0px 4px 0px #dddddd;
 }
 
 .stey-loop-text h3 {
     margin: 0px;
     text-transform: unset;
     font-size: 30px;
-    color: #E2B046;
     margin-bottom: 17px;
+    background: linear-gradient(73deg, rgba(20,125,248,1) 0%, rgba(0,47,102,1) 55%, rgba(20,125,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .stey-loop-text p {
-    font-size: 15px;
-    color: #F5F5F5;
+    font-size: 16px;
+    color: #383838;
+    font-weight: 600;
 }
 
 .stey-loop-input {
     position: relative;
     max-width: 380px;
     margin-left: auto;
-    background: #19191A;
-    border: 1px solid #E2B046;
+    background: transparent;
+    border: 1px solid rgb(20 125 248 / 50%);
     border-radius: 8px;
     padding: 4px;
 }
@@ -1064,14 +1190,14 @@ h6 {
     font-size: 15px;
     width: 100%;
     background-color: transparent;
-    color: #ffffff;
+    color: #383838;
+    font-weight:600;
 }
-
 .stey-loop-continue {
     border: 0px;
     outline: none;
-    background-color: #E2B046;
-    color: #000000;
+    background-color: #147df8;
+    color: #ffffff;
     border-radius: 8px;
     font-size: 13px;
     font-weight: 600;
@@ -1083,7 +1209,7 @@ h6 {
 }
 
 .stey-loop-input .loop-input-style::-webkit-input-placeholder {
-    color: #F5F5F5;
+    color: rgb(56 56 56 / 75%);
 }
 
 .pt-4 {
@@ -1247,6 +1373,7 @@ h6 {
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 20px;
+    padding-top:60px;
 }
 
 .how-to-content p, .how-to-content {
@@ -1559,18 +1686,17 @@ h6 {
 }
 
 .disclimer-content h2, .disclimer-content h3 {
-    font-size: 16px;
+    font-size: 20px;
     color: #383838;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .disclimer-content p {
     color: #383838;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.8;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .disclimer-content {
@@ -2456,12 +2582,6 @@ h6 {
     text-align: right;
 }
 
-.products-content {
-    background-image: url('../images/contact-body-bg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .productContent h3 {
     margin-top: 0px;
@@ -2848,35 +2968,41 @@ h6 {
         margin: 0;
         padding: 3px 12px;
         list-style-type: none;
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        background-color: #dedede;
-        align-items: center;
+        position: absolute;
+        width: auto;
+        background-color: transparent;
+        right: 44px;
+        top:16px;
+        transition:all .3s ease;
     }
 
         .login-lenu-mobile li:not(:last-child) {
             margin-right: 10px;
+            display:none;
         }
 
         .login-lenu-mobile li a {
-            padding: 5px 10px;
-            font-size: 13px;
-            color: #000000;
-            font-weight: 600;
+            padding: 8px 15px;
+            font-size: 14px;
+            color: #147df8;
+            font-weight: 700;
             display: block;
+            background-color: #e7f2fe;
+            border-radius: 6px;
         }
-
-        .login-lenu-mobile li .active-user {
-            height: 26px;
-            width: 26px;
-            border-radius: 50%;
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            line-height: 14px;
-            padding: 5px 8px;
-        }
+    .fixed-header .login-lenu-mobile{
+        top:8px;
+    }
+    .login-lenu-mobile li .active-user {
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        line-height: 14px;
+        padding: 5px 8px;
+    }
 
     .custom-header .container {
         padding: 0px;
@@ -3147,9 +3273,11 @@ h6 {
 
 @media (max-width: 600px) {
     .home-baner {
-        padding: 180px 0px 100px;
+        padding: 180px 0px 0px;
     }
-
+    .cprogress-inner {
+        padding-bottom: 60px;
+    }
     .banner-title, .banner-title h1 {
         font-size: 25px;
     }
@@ -3165,7 +3293,12 @@ h6 {
     .banner-btn {
         padding: 25px 0px 10px;
     }
-
+    .plan-page-padding.home-baner.about-banner {
+        padding-bottom: 0;
+    }
+    .home-baner.about-banner {
+        padding-bottom: 40px;
+    }
     .how-to-section {
         padding-top: 45px;
         padding-bottom: 25px;
@@ -3182,8 +3315,11 @@ h6 {
 
     .how-top-section {
         padding-top: 30px;
+        padding-bottom: 60px;
     }
-
+    .banner-contact-content {
+        padding-bottom: 60px;
+    }
     .how-topcc-section {
         padding-top: 40px;
     }
@@ -3365,6 +3501,10 @@ h6 {
 
     .stey-loop {
         padding: 40px 18px;
+    }
+    .plan-card {
+        min-width: 300px;
+        width: 100%;
     }
 }
 

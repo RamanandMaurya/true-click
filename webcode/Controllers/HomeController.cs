@@ -61,8 +61,12 @@ namespace webcode.Controllers
     {
       return View();
     }
+        public IActionResult Plan()
+        {
+            return View();
+        }
 
-    public IActionResult Disclaimer()
+        public IActionResult Disclaimer()
     {
       return View();
     }
