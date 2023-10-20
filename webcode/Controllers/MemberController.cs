@@ -1290,6 +1290,18 @@ namespace webcode.Controllers
       catch (Exception exe) { }
       return View();
     }
+     public async Task<IActionResult> AddView()
+    {
+      try
+      {
+        if (!await AuthenticateUserLoginAsync())
+        {
+          return RedirectToAction("Logout");
+        }
+      }
+      catch (Exception exe) { }
+      return View();
+    }
 
     public async Task<ActionResult> WithdrawalRequest()
     {

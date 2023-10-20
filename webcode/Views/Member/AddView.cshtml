@@ -1,0 +1,61 @@
+﻿@using System.Data;
+@using System.Data.SqlClient;
+@{
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<div class="dss-right-section noside-right-full">
+    <div class="dashboard-center">
+        <div class="custom-breadcrumb">
+            <ol class="cd-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#0">Add View</a></li>
+            </ol>
+        </div>
+        <div class="dashboard-center-itm">
+            <div class="cm-table-data">
+                <div class="cm-table-data-in">
+                    <table id="cmDataTable" class="display table" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Serial No.</th>
+                                <th>Task Name</th>
+                                <th>View Task</th>
+                                <th>Task Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td><p>Task 1</p></td>
+                                <td><button class="add-link-btn">View</button></td>
+                                <td><p>No View</p></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td><p>Task 2</p></td>
+                                <td><button class="add-link-btn">View</button></td>
+                                <td><p>No View</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-popup"> 
+        <div class="popup-inner">
+            <div class="popup-header">
+                <h5>Task 1<span></span></h5>
+            </div>
+            <div class="popup-Body">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

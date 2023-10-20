@@ -16,8 +16,22 @@ $('.toggle-other').click(function () {
 
 $('.dashtrigger-in').click(function(){
     $('body').toggleClass('mobile-open');
-  });
-  
+});
+$('.add-link-btn').click(function () {
+    $('.main-popup').css('display', 'flex');
+    var a = SetFunction1();
+    function SetFunction1() {
+        setTimeout(function () {
+            $('.popup-header h5 span').css('display', 'inline-block');
+        }, 10000);
+    }
+});
+
+$('.popup-header h5 span').click(function () {
+    $('.main-popup').css('display', 'none');
+    $(this).css('display', 'none');
+});
+
 
 function copy() {
   var copyText = document.getElementById("custom_Clipboard");

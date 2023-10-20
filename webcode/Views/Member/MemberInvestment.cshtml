@@ -15,54 +15,68 @@
                 @using (Html.BeginForm())
                 {
                     <div class="prasonal-form">
-                        <div class="pre-title-ue">Manage Investment</div>
-                        <div class="form-main">
-                            <div class="login-intup col-ff5">
-                                <span>Dhanu Wallet Balance</span>
-                                <input type="text" name="dhanuBalance" id="dhanuBalance" class="login-inp" value="@ViewData["_dhanubalance"]" readonly>
-                            </div>
-                            <div class="login-intup col-ff5">
-                                <span>Usdt Wallet Balance</span>
-                                <input type="text" name="usdtBalance" id="usdtBalance" class="login-inp" value="@ViewData["_usdtbalance"]" readonly>
-                            </div>
-                            <div class="login-intup col-ff5">
-                                <div class="custom-select">
-                                    <span>Payment Type</span>
-                                    <select id="paymenttype" name="paymenttype">
-                                      <option value="0">Choose Payment Type</option>
-                                      <option value="100_USDT">100 % USDT</option>
-                                      <option value="75_FUND_DHANU_25_USDT">75 % DHANU & 25 % USDT </option>
-                                    </select>
+                        <div class="pre-title-ue">Manage Investment<span><em>Total Balance :</em> <i class="fa fa-inr"></i> 235433</span></div>
+                        <div class="col-sm-12" style="padding-top:20px;">
+                            <div class="plan-section-main">
+                                <div class="plan-inner">
+                                    <div class="plan-card">
+                                        <h3>P5</h3>
+                                        <p class="price-text">Price : <span> 2500+(380 tax)</span></p>
+                                        <p>Account validity : <span> 12 month</span></p>
+                                        <p>Daily work : <span> 5 link</span></p>
+                                        <p>Payment per click : <span> Rs. 5</span></p>
+                                        <p><span>Payment per day 25</span></p>
+                                        <a href="#">Get Plan</a>
+                                    </div>
+                                </div>
+                                <div class="plan-inner">
+                                    <div class="plan-card">
+                                        <h3>P10</h3>
+                                        <p class="price-text">Price : <span> 5000+(760 tax)</span></p>
+                                        <p>Account validity : <span> 12 month</span></p>
+                                        <p>Daily work : <span> 10 link</span></p>
+                                        <p>Payment per click : <span> Rs. 5</span></p>
+                                        <p><span>Payment per day 50</span></p>
+                                        <a href="#">Get Plan</a>
+                                    </div>
+                                </div>
+                                <div class="plan-inner">
+                                    <div class="plan-card">
+                                        <h3>P20</h3>
+                                        <p class="price-text">Price : <span> 10000+(1517 tax)</span></p>
+                                        <p>Account validity : <span> 12 month</span></p>
+                                        <p>Daily work : <span> 20 link</span></p>
+                                        <p>Payment per click : <span> Rs. 5</span></p>
+                                        <p><span>Payment per day 100</span></p>
+                                        <a href="#">Get Plan</a>
+                                    </div>
+                                </div>
+                                <div class="plan-inner">
+                                    <div class="plan-card">
+                                        <h3>P50</h3>
+                                        <p class="price-text">Price : <span> 25000+(3793 tax)</span></p>
+                                        <p>Account validity : <span> 12 month</span></p>
+                                        <p>Daily work : <span> 50 link</span></p>
+                                        <p>Payment per click : <span> Rs. 5</span></p>
+                                        <p><span>Payment per day 250</span></p>
+                                        <a href="#">Get Plan</a>
+                                    </div>
+                                </div>
+                                <div class="plan-inner">
+                                    <div class="plan-card">
+                                        <h3>P125</h3>
+                                        <p class="price-text">Price : <span> 50000+(7585 tax)</span></p>
+                                        <p>Account validity : <span> 12 month</span></p>
+                                        <p>Daily work : <span> 125 link</span></p>
+                                        <p>Payment per click : <span> Rs. 5</span></p>
+                                        <p><span>Payment per day 625</span></p>
+                                        <a href="#">Get Plan</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="login-intup col-ff5">
-                                <span>Investment Amount</span>
-                                <input type="number" name="amount" id="amount" class="login-inp">
-                            </div>
-                            <div class="login-intup col-ff" style="display:none;">
-                                <span class="investmentTitle">Choose Plan</span>
-                                <div class="selectInvestment">
-                                    <div class="investmentItem"><input type="radio" checked id="ROI" name="investmentType" value="3" /><label for="ROI">Crypto Deposit Plan</label></div>
-                                    <div class="investmentItem"><input type="radio" id="CryptoDeposit" name="investmentType" value="2" /><label for="CryptoDeposit">Daily ROI Plan</label></div>
-                                </div>
-                            </div>
-                            
-
-                        </div>
-                        <div class="submit-btn-wrap">
-                            @{
-                                string err = "";
-                                if (ViewData["_ErrorMessage"] != null)
-                                {
-                                    err = ViewData["_ErrorMessage"].ToString();
-                                }
-                            }
-                            <label id="lblerr" style="color:#cb0f0f">@err</label><br />
-                            <button type="submit" class="admin-btn" id="btnSubmit" name="submit">Save Investment</button>
                         </div>
                     </div>
                 }
-
             </div>
         </div>
 
