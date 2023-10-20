@@ -3548,7 +3548,11 @@ h6 {
 @media (max-width: 600px) {
 
     /* Login*/
-
+    .booster-class {
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin: 60px 15px 0px 15px;
+    }
     .login-form {
         padding: 25px 15px;
     }
