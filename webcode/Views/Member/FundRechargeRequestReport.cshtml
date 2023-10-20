@@ -31,14 +31,11 @@
                 <th>#</th>
                 <th>Request Date</th>
                 <th>Reference no.</th>
-                <th>Dhanu amt.</th>
-                <th>USDT amt.</th>
-                <th>TP USDT amt.</th>
+                <th>Amount</th>
                 <th>Receipt</th>
                 <th>Status</th>
               </tr>
             </thead>
-
             <tbody>
               @{
                 var i = 0;
@@ -50,14 +47,11 @@
                     <td><p>@dr["Requestdate"].ToString()</p></td>
                     <td><p>@dr["TrReferenceno"].ToString()</p></td>
                     <td><p>$ @dr["DhanuAmount"].ToString()</p></td>
-                    <td><p>$ @dr["UsdtAmount"].ToString()</p></td>
-                    <td><p>$ @dr["TpUsdtAmount"].ToString()</p></td>
                     <td><a href="~/@dr["ReceiptUrl"].ToString()" target="_blank"><img src="~/@dr["ReceiptUrl"].ToString()" height="80" width="80" /></a></td>
                     <td><p>@dr["Status"].ToString()</p></td>
                   </tr>
                 }
               }
-
             </tbody>
           </table>
         </div>

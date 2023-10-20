@@ -26,6 +26,10 @@ var posi = $(link).offset().top-82;
 $('body,html').animate({scrollTop:posi},800);
 });
 
+$('.faq-sec .card-header').click(function () {
+    $(this).parent().siblings().find('.card-body-text').slideUp(300)
+});
+
 $('.slick-sliderItem-wrap').slick({
     dots: false,
     arrow: true,

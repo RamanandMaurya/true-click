@@ -521,20 +521,21 @@ h6 {
     transition: all .3s;
     transform-origin: center;
     height: 24px;
-    width: 35px;
+    width: 22px;
+    padding: 3px 0;
 }
 
     .trigger-in span {
         display: block;
-        height: 3px;
+        height: 2px;
         width: 100%;
         background-color: #666666;
-        margin: 6px auto;
+        margin: 4px auto;
         transition: all .3s;
     }
 
 .mobile-open .trigger-in span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
 }
 
 .mobile-open .trigger-in span:nth-child(2) {
@@ -542,7 +543,7 @@ h6 {
 }
 
 .mobile-open .trigger-in span:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* banner */
@@ -817,7 +818,7 @@ h6 {
     padding: 20px 15px;
     background-color: #ffffff;
     border-radius: 20px;
-    min-width: 212px;
+    min-width: 272px;
 }
 
 .plan-inner {
@@ -1043,19 +1044,31 @@ h6 {
     text-align: center;
 }
 .plan-card .price-text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
-.plan-card .price-text span{
-    font-size: 17px;
-    font-weight: 700;
-}
+    .plan-card .price-text span {
+        font-size: 20px;
+        font-weight: 700;
+    }
 .about-page-slider {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+.booster-class {
+    background: rgb(0,44,96);
+    background: linear-gradient(73deg, rgba(0,44,96,1) 0%, rgba(0,117,255,1) 100%);
+    padding: 40px;
+    border-radius: 40px;
+    margin-top: 60px;
+}
+    .booster-class .how-to-content-count ul li {
+        color: #ffffff;
+    }
+        .booster-class .how-to-content-count ul li:before {
+            background: rgb(255 255 255 / 85%);
+        }
 .team-title h4 {
     margin: 0px;
     font-size: 27px;
@@ -1346,9 +1359,10 @@ h6 {
     padding-bottom: 5px;
 }
 
-
+.booster-class .about-title-content {
+    -webkit-text-fill-color: #fff;
+}
 /* about trad */
-
 .site-btn {
     background-color: #147df8;
     color: #ffffff;
@@ -1815,7 +1829,131 @@ h6 {
     .cm-form-group-news .cm-form-control::-webkit-input-placeholder {
         color: #b5b5b5;
     }
+    /*faqs start*/
 
+.faq-section1 {
+    background: #fdfdfd;
+    padding:60px 0;
+    padding-top:20px;
+}
+
+.faq-title h2 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+}
+
+    .faq-title h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 2px;
+        background: #E91E63;
+        bottom: -25px;
+        margin-left: -30px;
+    }
+
+.faq-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+
+.faq-sec {
+    background: #FFFFFF;
+    /* box-shadow: 0px 0px 4px 0px #dddddd;*/
+    border-radius: 10px;
+}
+
+    .faq-sec .card {
+        border: none;
+        background: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+            .faq-sec .card .card-header {
+                padding: 0px;
+                border: none;
+                background: none;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+            }
+
+            .faq-sec .card .card-header:hover, .faq-sec .card .card-header.active {
+                background: #e7f2fe;
+            }
+
+            .faq-sec .card .card-header .faq-title {
+                width: 100%;
+                text-align: left;
+                padding: 0px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-weight: 400;
+                font-size: 24px;
+                color: #383838;
+                text-decoration: none !important;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-transform: none;
+                margin: 0;
+            }
+
+                .faq-sec .card .card-header .faq-title .badge {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 14px;
+                    float: left;
+                    -webkit-border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    border-radius: 100px;
+                    text-align: center;
+                    background: #E91E63;
+                    color: #fff;
+                    font-size: 12px;
+                    margin-right: 20px;
+                }
+
+        .faq-sec .card .card-body {
+            padding: 25px;
+            padding-left: 25px;
+            padding-bottom: 25px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #6F8BA4;
+            line-height: 28px;
+            letter-spacing: 1px;
+            border-top: 1px solid #F3F8FF;
+        }
+
+            .faq-sec .card .card-body p {
+                margin-bottom: 15px;
+                color: #383838;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0;
+            }
+
+@media (max-width: 991px) {
+    .faq-sec {
+        margin-bottom: 30px;
+    }
+
+        .faq-sec .card .card-header .faq-title {
+            line-height: 26px;
+            margin-top: 10px;
+        }
+}
+/*faqs end*/
 .footer_link.col2-menu {
     display: flex;
     flex-wrap: wrap;
@@ -2971,9 +3109,9 @@ h6 {
         position: absolute;
         width: auto;
         background-color: transparent;
-        right: 44px;
-        top:16px;
-        transition:all .3s ease;
+        right: 40px;
+        top: 16px;
+        transition: all .3s ease;
     }
 
         .login-lenu-mobile li:not(:last-child) {
@@ -3020,7 +3158,7 @@ h6 {
 
     .menu-trigger {
         order: 3;
-        margin-right: 12px;
+        margin-right: 15px;
     }
 
     .custom-menu-wrap {
@@ -3482,11 +3620,23 @@ h6 {
     .success-content-page {
         padding: 50px 16px 40px;
     }
-
+    .faq-sec .card .card-header .faq-title {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
     .succes-tbl ul li {
         font-size: 13px;
     }
-
+    .faq-sec .card .card-body {
+        padding: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+        .faq-sec .card .card-body p {
+            font-size: 14px;
+        }
     .success_name {
         font-size: 40px;
     }
@@ -3505,8 +3655,15 @@ h6 {
         padding: 40px 18px;
     }
     .plan-card {
-        min-width: 300px;
+        min-width: 100%;
         width: 100%;
+    }
+    .plan-inner {
+        width: 100%;
+    }
+    .body-wrapper {
+        background-size: 200%;
+        background-position: -1px -200px;
     }
 }
 
@@ -3514,6 +3671,7 @@ h6 {
     .login-lenu-mobile {
         justify-content: space-between;
     }
+    
 
         .login-lenu-mobile li:not(:last-child) {
             margin-right: 0px;
