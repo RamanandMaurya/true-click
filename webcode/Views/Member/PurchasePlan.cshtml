@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = "~/Views/Shared/_MemberLayout.cshtml";
 }
 
@@ -26,7 +27,7 @@
                                         <p>Daily work : <span> 5 link</span></p>
                                         <p>Payment per click : <span> Rs. 5</span></p>
                                         <p><span>Payment per day 25</span></p>
-                                        <a href="#" class="add-link-btn">Get Plan</a>
+                                        <a href="#">Get Plan</a>
                                     </div>
                                 </div>
                                 <div class="plan-inner">
@@ -37,7 +38,7 @@
                                         <p>Daily work : <span> 10 link</span></p>
                                         <p>Payment per click : <span> Rs. 5</span></p>
                                         <p><span>Payment per day 50</span></p>
-                                        <a href="#" class="add-link-btn">Get Plan</a>
+                                        <a href="#">Get Plan</a>
                                     </div>
                                 </div>
                                 <div class="plan-inner">
@@ -48,7 +49,7 @@
                                         <p>Daily work : <span> 20 link</span></p>
                                         <p>Payment per click : <span> Rs. 5</span></p>
                                         <p><span>Payment per day 100</span></p>
-                                        <a href="#" class="add-link-btn">Get Plan</a>
+                                        <a href="#">Get Plan</a>
                                     </div>
                                 </div>
                                 <div class="plan-inner">
@@ -59,7 +60,7 @@
                                         <p>Daily work : <span> 50 link</span></p>
                                         <p>Payment per click : <span> Rs. 5</span></p>
                                         <p><span>Payment per day 250</span></p>
-                                        <a href="#" class="add-link-btn">Get Plan</a>
+                                        <a href="#">Get Plan</a>
                                     </div>
                                 </div>
                                 <div class="plan-inner">
@@ -70,7 +71,7 @@
                                         <p>Daily work : <span> 125 link</span></p>
                                         <p>Payment per click : <span> Rs. 5</span></p>
                                         <p><span>Payment per day 625</span></p>
-                                        <a href="#" class="add-link-btn">Get Plan</a>
+                                        <a href="#">Get Plan</a>
                                     </div>
                                 </div>
                             </div>
@@ -79,22 +80,19 @@
                 }
             </div>
         </div>
-        <div class="main-popup">
+        <div class="main-popup" style="display:flex">
             <div class="popup-inner">
                 <div class="popup-header">
-                    <h5>Plan<span class="close-btn-popup1"></span></h5>
+                    <h5>Plan<a href="~/member/memberInvestment"><span class="close-btn-popup1"></span></a></h5>
                 </div>
                 <div class="popup-Body">
-                    <p class="popup-para">Confirm Your Plan</p>
-                    <div class="plan-inner">
+                    <div class="plan-inner" style="padding-top:30px">
                         <div class="plan-card">
-                            <h3>P125</h3>
-                            <p class="price-text">Price : <span> 50000+(7585 tax)</span></p>
-                            <p>Account validity : <span> 12 month</span></p>
-                            <p>Daily work : <span> 125 link</span></p>
-                            <p>Payment per click : <span> Rs. 5</span></p>
-                            <p><span>Payment per day 625</span></p>
-                            <a href="~/member/purchaseplan">Confirm Plan</a>
+                            <p class="price-text"><span> Your plan is successfully purchased</span></p>
+                            <p style="padding:30px 0; text-align:center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#4CAF50" /><path fill="#ffffff" d="M34.6 14.6L21 28.2l-5.6-5.6l-2.8 2.8l8.4 8.4l16.4-16.4z" /></svg>
+                            </p>
+                            <a href="~/member/index">Home</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +116,7 @@
                 $("#btnSubmit").show();
                 //$("#btnSubmit").removeAttr("disabled");
                 return false;
-          }
+            }
 
             var plan = $("input[name='investmentType']:checked").val();
             var planname = '';
@@ -156,14 +154,14 @@
         if (!InputAmountValidate("amount")) {
             error = 'Please enter valid investment amount. !!';
             return error;
-      }
+        }
 
-      var amt = $('#amount').val();
+        var amt = $('#amount').val();
 
-      if (parseFloat(amt) < 25) {
-        error = 'Please enter valid amount. Minimum investment amount is $25. !!';
-        return error;
-      }
+        if (parseFloat(amt) < 25) {
+            error = 'Please enter valid amount. Minimum investment amount is $25. !!';
+            return error;
+        }
         return error;
     }
 
@@ -191,3 +189,4 @@
         return true;
     }
 </script>
+

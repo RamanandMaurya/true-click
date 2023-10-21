@@ -22,14 +22,17 @@ $('.add-link-btn').click(function () {
     var a = SetFunction1();
     function SetFunction1() {
         setTimeout(function () {
-            $('.popup-header h5 span').css('display', 'inline-block');
+            $('.popup-header h5 span.close-btn-popup').css('display', 'inline-block');
         }, 10000);
     }
 });
 
-$('.popup-header h5 span').click(function () {
+$('.popup-header h5 span.close-btn-popup').click(function () {
     $('.main-popup').css('display', 'none');
     $(this).css('display', 'none');
+});
+$('.popup-header h5 span.close-btn-popup1').click(function () {
+    $('.main-popup').css('display', 'none');
 });
 
 

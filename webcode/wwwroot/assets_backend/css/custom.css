@@ -715,9 +715,18 @@ h6 {
         width: 25px;
         height: 25px;
         background-color: white;
-        display:none;
-        cursor:pointer;
+        display: none;
+        cursor: pointer;
     }
+.popup-para {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 18px 0;
+}
+        .popup-header h5 span.close-btn-popup1 {
+            display: inline-block;
+        }
         .popup-header h5 span:before {
             position: absolute;
             height: 2px;
@@ -753,6 +762,7 @@ h6 {
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
+    min-width: 400px;
 }
 
 /* left section */
@@ -780,8 +790,12 @@ h6 {
     transition: width .3s;
     padding-top: 0px;
     height: calc(100vh - 82px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
+    .dashboard-left::-webkit-scrollbar {
+        width: 2px;
+    }
 .dashboard-menu ul {
     margin: 0px;
     padding: 0px;
@@ -936,13 +950,18 @@ h6 {
     background-color: #ffffff;
     border-radius: 20px;
     min-width: 272px;
+    width: 100%;
 }
 
 .plan-inner {
     padding: 0px 10px;
     padding-bottom: 20px;
 }
-
+.popup-Body .plan-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .plan-section-main {
     display: flex;
     flex-wrap: wrap;
@@ -977,7 +996,7 @@ h6 {
         font-weight: 400;
     }
 
-.plan-card a {
+.plan-card a, .plan-card a:focus {
     background-color: #e7f2fe;
     display: block;
     border-radius: 8px;
@@ -4172,7 +4191,7 @@ table.dataTable tfoot th, table.dataTable tfoot td {
     }
 
     .mobile-open .dashboard-menu ul li a:hover:before {
-        opacity: 1;
+        opacity: 0;
         visibility: visible;
         pointer-events: all;
     }
@@ -4557,7 +4576,7 @@ table.dataTable tfoot th, table.dataTable tfoot td {
     }
 
     .dashboard-header {
-        box-shadow: 0px 0px 8px -2px #857b4d;
+        box-shadow: 0px 0px 4px 0px #c6c4c4;
     }
 
     .dashboard-main {
@@ -4589,7 +4608,7 @@ table.dataTable tfoot th, table.dataTable tfoot td {
         width: 100%;
         left: 0px;
         right: 0px;
-        top: 0px;
+        top: 72px;
         bottom: 0px;
         background-color: rgb(56 56 56 / 38%);
         z-index: 9;
@@ -4710,6 +4729,7 @@ table.dataTable tfoot th, table.dataTable tfoot td {
     }
     .popup-inner {
         width: 100%;
+        min-width: auto;
     }
     .popup-Body iframe {
         max-width: 420px;

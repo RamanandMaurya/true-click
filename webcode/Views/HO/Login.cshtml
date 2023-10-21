@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Best Asset Analysis People Network" />
-    <title>Dashboard</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <title>TrueClick</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/favicon.svg">
     <link rel="stylesheet" href="~/assets_ho/css/bootstrap-grid.min.css">
     <link href="~/assets_ho/css/icons.css" rel="stylesheet">
     <link href="~/assets_ho/css/custom.css" rel="stylesheet">
@@ -21,8 +21,13 @@
         <div class="cm-container">
             <div class="cm-bg-images">
                 <div class="login-wrapper">
+                    <div class="mobile-logo">
+                            <a href="~/">
+                                <img src="~/assets_ho/images/logo.svg" alt="logo">
+                            </a>
+                        </div>
                     <div class="login-wrapper-in">
-                        <div class="login-form-area">
+                        <div class="login-form-area register-page">
                             <div class="login-form">
                                 @using (Html.BeginForm())
                                 {
@@ -52,15 +57,22 @@
                                 }
                             </div>
                         </div>
-                        <div class="login-logo-area">
+                        <div class="login-logo-area register-page">
                             <div class="login-logo-inner">
                                 <div class="login-logo">
-                                    <img src="~/assets_ho/images/logo.png" alt="logo">
+                                    <a href="~/">
+                                        <img src="~/assets_ho/images/logo.svg" alt="logo">
+                                    </a>
                                 </div>
                                 <div class="logo-bottom-content">
-                                    <p>The Best Crypto Broking App</p>
+                                    <p><span>Engaging more, Refreshing result</span></p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="mobile-footer-image">
+                            <a href="~/">
+                                <img src="~/assets_ho/images/social-media.png" alt="image-login">
+                            </a>
                         </div>
                     </div>
                 </div>
