@@ -4126,6 +4126,68 @@ table.dataTable tfoot th, table.dataTable tfoot td {
         .form_nots p strong {
             color: #e2e2e2;
         }
+        /*timer section*/
+.upgrade-btn {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #147df8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:all .3s ease;
+}
+    .upgrade-btn:hover, .upgrade-btn:focus {
+        background-color: #1473e2;
+        outline: none;
+    }
+.auth_activate {
+    background-color: transparent;
+    border-radius: 5px;
+    border-top: 1px solid #dddddd;
+    padding: 15px;
+}
+.border-0{
+    border:none !important;
+}
+.auth_activate h5 {
+    color: #383838;
+    font-weight: 600;
+    font-size: 14px;
+}
+.registration-date{
+    visibility:hidden;
+    width:0;
+    height:0;
+}
+.active_timer {
+    padding: 9px 0px 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -5px;
+}
+
+    .active_timer li {
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+        .active_timer li h6 {
+            font-size: 20px;
+            color: #383838;
+            margin-bottom: 0px;
+        }
+
+        .active_timer li p {
+            font-size: 12px;
+            color: rgba(18, 18, 18, 0.54);
+        }
 
 @media (min-width: 768px) {
     .mobile-open .dashboard-left {

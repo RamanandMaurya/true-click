@@ -312,11 +312,43 @@
     <div class="dashboard-right">
         <div class="dashboard-right-itm light-border">
             <div class="dashboard-right-itm-in">
+                <div class="item-header border-0">
+                    Profile Status : <span style="color:#EE4135;">Inactive</span>
+                    @*Profile Status : <span style="color:#1DBF74;">Active</span>*@
+                    <div id="registration-date-time" class="registration-date">23 October 2023 18:48:00 GMT+01:00</div>
+                </div>
+                <div class="item-body pt-0">
+                    <div class="auth_activate">
+                        <ul class="active_timer" id="timer">
+                            <li>
+                                <h6 id="days">14</h6>
+                                <p>Days</p>
+                            </li>
+                            <li>
+                                <h6 id="hours">03</h6>
+                                <p>Hours</p>
+                            </li>
+                            <li>
+                                <h6 id="minutes">06</h6>
+                                <p>Mins</p>
+                            </li>
+                            <li>
+                                <h6 id="seconds">54</h6>
+                                <p>Sec</p>
+                            </li>
+                        </ul>
+                        <button class="upgrade-btn">Upgrade</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-right-itm light-border">
+            <div class="dashboard-right-itm-in">
                 <div class="item-header">
                     My Income
                 </div>
                 <div class="item-body">
-                   <ul class="invest-ddhh">
+                    <ul class="invest-ddhh">
                         <li>
                             <span class="dhanu-price-mn"><em>Daily Income </em> <span><em><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#383838" d="M8 3h10l-1 2h-3.26c.48.58.84 1.26 1.05 2H18l-1 2h-2a5.558 5.558 0 0 1-4.8 4.96V14h-.7l6 7H13l-6-7v-2h2.5c1.76 0 3.22-1.3 3.46-3H7l1-2h4.66C12.1 5.82 10.9 5 9.5 5H7l1-2Z" fill-opacity=".54" /></svg></em>@_dashboard.Rows[0]["LevelIncome"].ToString()</span></span>
                             <span class="dhanu-price-mn"><em>Booster Income </em> <span><em><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#383838" d="M8 3h10l-1 2h-3.26c.48.58.84 1.26 1.05 2H18l-1 2h-2a5.558 5.558 0 0 1-4.8 4.96V14h-.7l6 7H13l-6-7v-2h2.5c1.76 0 3.22-1.3 3.46-3H7l1-2h4.66C12.1 5.82 10.9 5 9.5 5H7l1-2Z" fill-opacity=".54" /></svg></em>@_dashboard.Rows[0]["RoiIncome"].ToString()</span></span>
